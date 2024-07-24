@@ -1,0 +1,71 @@
+.header.container {
+    .inner {
+        position: relative;
+        .navbar {
+            display: flex;
+        }
+    }
+}
+.bm-burger-button {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 0px;
+    top: 28px;
+    
+    @media(min-width: 992px) {
+        display: none;
+    }
+}
+.nav-menu {
+    display: flex;
+    justify-content: end;
+    .navbar-nav {
+        list-style-type: none;
+        display: flex;
+        // flex-direction: row-reverse;
+        .nav-link {
+            padding: 0 7px;
+            color: $dark-blue;
+            font-size: 20px;
+            text-decoration: none;
+            &:hover, 
+            &:focus {
+                font-weight: bold;
+                border-bottom: 2px solid $dark-blue;
+            }
+        }
+    }
+}
+
+.bm-overlay {
+    opacity: 0 !important;
+    background-color: $white !important;
+}
+.bm-menu-wrap {
+    background-color: white;
+    max-height: 264px;
+    right: 58px;
+    width: 100% !important;
+    position: relative !important;
+    
+    .bm-menu {
+        background-color: $grey;
+    }
+    .mmenu--list {
+        list-style: none;
+        padding-top: 20px;
+        font-size: 20px;
+        li {
+            padding-top: 7px;
+        }
+    } 
+    a {
+        color: $black !important;
+    }
+}
+.bm-cross-button {
+    // width: 31px !important;
+    // height: 31px !important;
+    // right: 44px !important;
+}

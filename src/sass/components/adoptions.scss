@@ -1,0 +1,53 @@
+.adoptions {
+    // background-image: url('../../files/pawprints.png');
+    background-repeat: none;
+    h2 {
+        margin-bottom: 114px;
+    }
+    a.adoptions--wrapper {
+        padding: 0;
+        text-decoration: none;
+        &:hover, 
+        &:focus {
+            .adoption {
+                background-color: $blue;
+            }
+            
+        }
+        .adoption__image {
+            img {
+                border-top-right-radius: 3px;
+                border-top-left-radius: 3px;
+            }
+           
+        }
+        .adoption-teaser {
+            
+            .title {
+                padding: 10px;
+                text-align: center;
+                font-weight: bold;
+                font-size: 36px;
+                color: $black;
+                
+            }
+        }
+    }
+    .view-adoptions {
+        float: right;
+        color: $black;
+        text-decoration: none;
+        margin-top: 114px;
+        font-weight: bold;
+        font-size: 28px;
+        &:hover,
+        &:focus {
+            img {
+                transform: translateX(70%);
+            }
+        }
+        img {
+            max-width: 20px
+        }
+    }
+}

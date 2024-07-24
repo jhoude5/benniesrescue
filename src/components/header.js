@@ -11,7 +11,13 @@ const Header = () => {
     return (
 
         <header>
-            <Link to='/fr'>Français</Link>
+            <div className="container">
+                <div className="row">
+                    <Link className='language-switcher' to='/fr'>Français</Link>
+                </div>
+                
+            </div>
+            
             <div className='header container'><div className='inner'>
                 <MainMenu />
                 <MobileMenu

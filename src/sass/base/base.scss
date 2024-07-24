@@ -1,0 +1,62 @@
+@import 'colors';
+
+h1 {
+    @media(min-width: 1200px ) {
+        font-size: 64px;
+    }
+    
+}
+h2 {
+    @media(min-width: 1200px ) {
+        font-size: 48px;
+    }
+    
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: Montserrat;
+    font-weight: bold;
+    color: $black;
+}
+p {
+    font-family: Roboto, sans-serif;
+    color: $black;
+    @media(min-width: 1200px ) {
+        font-size: 24px;
+    }
+}
+.visually-hidden {
+    visibility: hidden;
+}
+#back-to-top {
+    left: 200px;
+    bottom: 300px;
+    background-color: $dark-blue;
+    box-shadow: none;
+}
+.center {
+    text-align: center;
+}
+section {
+    padding: 40px 0;
+    @media(min-width: 768px) {
+        padding: 75px 0;
+    }
+    @media(min-width: 1024px) {
+        padding: 100px 0;
+    }
+}
+.btn-primary {
+    background-color: $dark-blue;
+    color: $white;
+    border-radius: 15px;
+    padding: 15px 36px;
+    font-size: 20px;
+    border: 2px solid $dark-blue;
+    text-decoration: none;
+    &:hover,
+    &:focus {
+        background-color: $white;
+        color: $dark-blue;
+        border: 2px solid $dark-blue;
+    }
+}

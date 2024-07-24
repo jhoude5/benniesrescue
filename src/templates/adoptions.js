@@ -9,11 +9,6 @@ import { INLINES, BLOCKS, MARKS } from '@contentful/rich-text-types';
 
 
 const AdoptionsTemplate = ({data}) => {
-    console.log(data);
-
-    const adoptionData = data.allContentfulAdoptions.edges[0].nodes;
-    // const { names, description, image } = adoptionData;
-
     
     const options = {
         

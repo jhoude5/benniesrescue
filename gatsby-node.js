@@ -40,13 +40,13 @@ exports.createPages = async ({ graphql, actions }) => {
       });
    
       // Create pagination
-        // paginate({
-        //     createPage,
-        //     items: enadoptionData,
-        //     itemsPerPage: 12,
-        //     pathPrefix: '/adoptions',
-        //     component: path.resolve('src/templates/adoptions.js')
-        // })
+        paginate({
+            createPage,
+            items: enadoptionData,
+            itemsPerPage: 12,
+            pathPrefix: '/adoptions',
+            component: path.resolve('src/templates/adoptions.js')
+        })
 
         const fradoptionData = result.data.adoptionsfr.edges;
         const FrAdoptionsTemplate = require.resolve('./src/templates/fr/adoptions.js');
@@ -63,12 +63,12 @@ exports.createPages = async ({ graphql, actions }) => {
             })
           });
           // Create pagination
-            // paginate({
-            //     createPage,
-            //     items: fradoptionData,
-            //     itemsPerPage: 12,
-            //     pathPrefix: '/adoptions',
-            //     component: path.resolve('src/templates/adoptions.fr.js')
-            // })
+            paginate({
+                createPage,
+                items: fradoptionData,
+                itemsPerPage: 12,
+                pathPrefix: '/adoptions',
+                component: path.resolve('src/templates/fr/adoptions.js')
+            })
 }
 

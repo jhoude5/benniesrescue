@@ -1,5 +1,5 @@
 import React from "react";
-import closeIcon from '../../files/Logo.png';
+import closeIcon from '../../files/close.svg';
 import PropTypes from 'prop-types';
 import MainMenu from './menu/mainmenu'
 import MobileMenu from './menu/mobilemenu';
@@ -11,7 +11,10 @@ const Header = () => {
     return (
 
         <header>
-            <Link to='/'>English</Link>
+            <div className="container">
+                <Link className='language-switcher' to='/'>English</Link>
+            </div>
+            
             <div className='header container'><div className='inner'>
                 <MainMenu />
                 <MobileMenu

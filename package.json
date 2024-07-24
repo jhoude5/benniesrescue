@@ -16,19 +16,27 @@
   },
   "dependencies": {
     "@contentful/rich-text-types": "^16.8.1",
+    "@popperjs/core": "^2.11.8",
     "bootstrap": "^5.3.3",
     "gatsby": "^5.13.5",
     "gatsby-awesome-pagination": "^0.3.8",
+    "gatsby-plugin-google-fonts": "^1.0.1",
     "gatsby-plugin-i18n": "^1.0.1",
     "gatsby-plugin-image": "^3.13.1",
+    "gatsby-plugin-manifest": "^5.13.1",
     "gatsby-plugin-sass": "^6.13.1",
     "gatsby-plugin-sharp": "^5.13.1",
     "gatsby-source-contentful": "^8.13.2",
     "gatsby-source-filesystem": "^5.13.1",
     "gatsby-transformer-sharp": "^5.13.1",
+    "jquery": "^3.7.1",
     "react": "^18.2.0",
+    "react-bootstrap": "^2.10.4",
     "react-burger-menu": "^3.0.9",
     "react-dom": "^18.2.0",
     "sass": "^1.77.8"
+  },
+  "overrides": {
+    "lmdb": "2.6.0"
   }
 }

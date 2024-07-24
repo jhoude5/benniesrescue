@@ -20,6 +20,7 @@ const MainMenu = () => {
                 <li className='nav-item'><Link className='nav-link' to='/fr/contact'>Contactez-nous</Link></li>
                 
             </ul>
+            <a href='/donate' className='btn btn-primary btn-header'>Faire un don</a>
         </div>
      
     </nav>

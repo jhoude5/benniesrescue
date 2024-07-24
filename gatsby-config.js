@@ -15,11 +15,26 @@ module.exports = {
     __key: "images"
   },
   {
+    resolve: `gatsby-plugin-google-fonts`,
+    options: {
+      fonts: [
+        `Risque`, `Montserrat`
+      ],
+      display: 'swap'
+    }
+  },
+  {
     resolve: 'gatsby-source-contentful',
     options: {
       "accessToken": "oHHPclMqccBUTGME9MwqMAc_Nvjq1oXZXj07jBCkFoY",
       "spaceId": "5nixl2k7fr71",
     downloadLocal: true,
+    }
+  },
+  {
+    resolve: 'gatsby-plugin-manifest',
+    options: {
+      "icon": "src/favicon.png"
     }
   },
   {
