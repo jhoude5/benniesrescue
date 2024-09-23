@@ -5,10 +5,10 @@ const Foster = () => {
     return (
 
         <div className="container center apply">
-            <h2>Become a Foster</h2>
-            <p>Becoming a foster parent is a significant and rewarding commitment.</p>
-            <a className='btn btn-primary' href='https://getmy.mortgage/yourfavottbrkr#/application-widget/welcome?locale=en-CA'>
-                Learn More</a>
+            <h2>Devenir famille d'accueil</h2>
+            <p>Devenir famille d’accueil est un engagement important et enrichissant.</p>
+            <a className='btn btn-primary' href='/fr/foster'>
+            Apprendre encore plus</a>
         </div>
     );
 };

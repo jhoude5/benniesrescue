@@ -1,7 +1,7 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import Header from '../components/header.js';
-// import Footer from '../components/footer.js';
+import Footer from '../components/footer.js';
 import { renderRichText } from 'gatsby-source-contentful/rich-text';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import { INLINES, BLOCKS, MARKS } from '@contentful/rich-text-types';
@@ -48,7 +48,7 @@ const AdoptionsTemplate = ({data}) => {
         </section>
     
         </main>
-        {/* <Footer /> */}
+        <Footer />
     </div>
       
       

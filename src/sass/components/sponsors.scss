@@ -2,5 +2,21 @@
     background-color: $light-grey;
     h2 {
         text-align: center;
+        margin-bottom: 77px;
+    }
+    img {
+        max-width: 200px;
+        margin-bottom: 40px;
+    }
+    .col-md-12 {
+        display: flex;
+        justify-content: center;
+        img {
+            max-width: 400px;
+        }
+    }
+    .col-md-4 {
+        display: flex;
+        justify-content: center;
     }
 }

@@ -18,6 +18,26 @@ module.exports = {
     resolve: `gatsby-plugin-google-fonts`,
     options: {
       fonts: [
+        `Inika`,
+        `source sans pro\:300,400,400i,700` // you can also specify font weights and styles
+      ],
+      display: 'swap'
+    }
+  },
+  {
+    resolve: `gatsby-plugin-intl`,
+    options: {
+      // language JSON resource path
+      path: `${__dirname}/src/intl`,
+      languages: [`en`, `fr`],
+      defaultLanguage: `en`,
+      redirect: true,
+    },
+  },
+  {
+    resolve: `gatsby-plugin-google-fonts`,
+    options: {
+      fonts: [
         `Risque`, `Montserrat`
       ],
       display: 'swap'
@@ -38,12 +58,17 @@ module.exports = {
     }
   },
   {
+    resolve: 'gatsby-plugin-html-attributes',
+    options: {
+      lang: 'en-US'
+    }
+  },
+  {
     resolve: `gatsby-plugin-i18n`,
     options: {
-      langKeyDefault: 'en',
       langKeyForNull: 'en',
-      prefixDefault: false,
       useLangKeyLayout: false,
+      prefixDefault: false,
     },
   },]
 };

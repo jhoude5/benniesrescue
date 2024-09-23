@@ -1,3 +1,93 @@
 footer {
-    
+    margin-top: 100px;
+    a {
+        color: $black;
+        text-decoration: none;
+        &:hover,
+        &:focus {
+            color: $blue;
+        }
+    }
+    .footer-logo {
+        max-width: 229px;
+        margin-bottom: 60px;
+    }
+    .footer-menu {
+        width: auto;
+        list-style-type: none;
+        display: flex;
+        width: 80%;
+        justify-content: end;
+        font-family: Inika;
+        li {
+            font-weight: bold;
+            font-size: 28px;
+            padding: 0 40px;
+            ul {
+                list-style-type: none;
+                padding: 0;
+                li {
+                    padding: 0;
+                    font-weight: normal;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+    .address, 
+    .contact {
+        width: 50%;
+        p {
+            font-family: Inika;
+            font-size: 20px;
+            a {
+                color: black;
+                text-decoration: none;
+                &:hover,
+                &:focus {
+                    color: $blue;
+                }
+            }
+        }
+        
+    }
+    .contact {
+        display: flex;
+        justify-content: end;
+    }
+    .info-row {
+        display: flex;
+    }
+    .footer-bottom {
+        display: flex;
+        
+        .copyright {
+            width: 100%;
+            margin-top: 30px;
+            p {
+            font-size: 16px;
+            }
+        }
+        .footer-donate-btn {
+            justify-content: end;
+            width: 100%;
+            p {
+                float: right;
+                a.btn {
+                    background-color: $red;
+                    color: $white;
+                    border-color: $red;
+                    padding: 10px 36px;
+                    border-radius: 3px;
+                    &:hover,
+                    &:focus {
+                        background-color: white;
+                        color: $black;
+                    }
+                }
+            }
+            
+        }
+        
+    }
 }

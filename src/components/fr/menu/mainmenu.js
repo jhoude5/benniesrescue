@@ -16,11 +16,11 @@ const MainMenu = () => {
             
                 <li className='nav-item'><Link className='nav-link' to='/fr/about'>À propos</Link></li>
                 <li className='nav-item'><Link className='nav-link' to='/fr/adoptions'>Adoptions</Link></li>
-                <li className='nav-item'><Link className='nav-link' to='/fr/fosters'>Favoriser</Link></li>
+                <li className='nav-item'><Link className='nav-link' to='/fr/fosters'>Famille D’accueil</Link></li>
                 <li className='nav-item'><Link className='nav-link' to='/fr/contact'>Contactez-nous</Link></li>
                 
             </ul>
-            <a href='/donate' className='btn btn-primary btn-header'>Faire un don</a>
+            <a href='/fr/donate' className='btn btn-primary btn-header'>Faire un don</a>
         </div>
      
     </nav>

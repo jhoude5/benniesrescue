@@ -2,7 +2,7 @@ import * as React from "react"
 import { graphql } from 'gatsby';
 import Header from '../components/header.js';
 import '../sass/styles.scss';
-// import Footer from "../components/footer";
+import Footer from "../components/fr/footer";
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import Pagination from "../components/pagination.js";
 
@@ -44,7 +44,7 @@ const Adoptions = ({data, pageContext}) => {
           <Pagination pageContext={pageContext} />
           
         </main>
-        {/* <Footer /> */}
+        <Footer />
     </div>
    
   )
@@ -67,5 +67,6 @@ export const query = graphql`
   `
 
 export default Adoptions
+export const Head = () => <title>Adoptions</title>
 
 

@@ -2,7 +2,7 @@ import React from "react";
 import { graphql, useStaticQuery } from 'gatsby';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import rightarrow from '../files/rightarrow.png';
-import imageUrl from '../files/pawprints.png';
+import imageUrl from '../files/paws.jpg';
 
 const Adoptions = () => {
     const data = useStaticQuery(graphql`
@@ -27,7 +27,7 @@ const Adoptions = () => {
   }
     return (
 
-        <div className="container" style={divStyles}>
+        <div className="container">
             <div className="row">
                 <h2>Adoptions</h2>
                 {adoptions.map((item, index)  => {

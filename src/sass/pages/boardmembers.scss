@@ -1,0 +1,25 @@
+.board-members {
+    margin-bottom: 120px;
+    .board-img {
+        text-align: center;
+        img {
+            width: 177px;
+            height: 177px;
+            border-radius: 100%;
+            
+        }
+    }
+    h2,
+    p {
+        text-align: center;
+        font-weight: 300;
+    }
+    h2 {
+        font-size: 28px;
+        font-weight: 600;
+    }
+    p {
+        font-size: 36px;
+    }
+    
+}

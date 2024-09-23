@@ -31,8 +31,7 @@
             text-decoration: none;
             &:hover, 
             &:focus {
-                font-weight: bold;
-                border-bottom: 2px solid $dark-blue;
+                color: $blue;
             }
         }
     }

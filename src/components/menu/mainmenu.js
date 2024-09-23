@@ -2,8 +2,8 @@ import React from 'react'
 import { Link } from 'gatsby';
 import homelogo from '../../files/Logo.png';
 
-const MainMenu = () => {
-
+const MainMenu = (n) => {
+  
   return (
     <nav className='navbar navbar-expand-lg'>
         <Link to='/' className='navbar-brand'>
@@ -14,10 +14,10 @@ const MainMenu = () => {
         <div className="collapse navbar-collapse nav-menu">
             <ul className='navbar-nav'>
             
-                <li className='nav-item'><Link className='nav-link' to='/about'>About</Link></li>
-                <li className='nav-item'><Link className='nav-link' to='/adoptions'>Adoptions</Link></li>
-                <li className='nav-item'><Link className='nav-link' to='/fosters'>Fosters</Link></li>
-                <li className='nav-item'><Link className='nav-link' to='/contact'>Contact Us</Link></li>
+                <li className='nav-item'><Link className='nav-link' to='/about' partiallyActive={true} activeClassName="active">About</Link></li>
+                <li className='nav-item'><Link className='nav-link' to='/adoptions/' activeClassName="active">Adoptions</Link></li>
+                <li className='nav-item'><Link className='nav-link' to='/fosters/' activeClassName="active">Fosters</Link></li>
+                <li className='nav-item'><Link className='nav-link' to='/contact/' activeClassName="active">Contact Us</Link></li>
                 
             </ul>
             <a href='/donate' className='btn btn-primary btn-header'>Donate</a>

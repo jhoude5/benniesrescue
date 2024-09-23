@@ -17,8 +17,12 @@ import chasseur from '../files/hoteldechasseur.png';
 import grenville from '../files/grenville.png';
 import petvalue from '../files/petvalue.png';
 import arundel from '../files/arundel.png';
+import imageUrl from '../files/paws.jpg';
 
 const IndexPage = () => {
+  const divStyles = {
+    backgroundImage: `url(${imageUrl})`,
+  }
   return (
     <main>
       <Header />
@@ -50,7 +54,7 @@ const IndexPage = () => {
               <img src={trap} alt=''/>
               <p>Trap Neuter and Release</p>
             </div>
-            <div className="service col-md-4 adopt">
+            <div className="service col-md-4 affordable-adoptions">
               <img src={adopt} alt='' />
               <p>Affordable Adoptions</p>
             </div>
@@ -61,10 +65,10 @@ const IndexPage = () => {
           </div>
         </div>
       </section>
-      <section className="fosters">
+      <section className="foster">
         <Foster />
       </section>
-      <section className="adoptions">
+      <section className="adoptions" style={divStyles}>
         <Adoptions />
       </section>
       <section className="sponsors">
@@ -95,7 +99,7 @@ const IndexPage = () => {
           </div>
         </div>
       </section>
-      <section className="success">
+      <section className="success" style={divStyles}>
         <SuccessStories />  
       </section>
       <section className="volunteers">
@@ -109,3 +113,4 @@ const IndexPage = () => {
 export default IndexPage
 
 export const Head = () => <title>Home Page</title>
+

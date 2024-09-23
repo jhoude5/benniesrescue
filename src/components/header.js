@@ -11,14 +11,10 @@ const Header = () => {
     return (
 
         <header>
-            <div className="container">
-                <div className="row">
+            <div className='header container'><div className='inner'>
+            <div className="row">
                     <Link className='language-switcher' to='/fr'>Français</Link>
                 </div>
-                
-            </div>
-            
-            <div className='header container'><div className='inner'>
                 <MainMenu />
                 <MobileMenu
                   right
@@ -28,9 +24,6 @@ const Header = () => {
                   customCrossIcon={<img alt='mobile menu close button' src={closeIcon} />}
                 />
             </div></div>
-        
-      
-
         </header>
     );
 };

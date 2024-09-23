@@ -10,19 +10,19 @@ const MobileMenu = (props) => {
       <ul className="mmenu--list">
       
         <li className='mmenu--list__item'>
-          <Link to='/about'>About</Link>
+          <Link to='/fr/about'>À propos</Link>
         </li>
         
         <li className='mmenu--list__item'>
-          <Link to='/adoptions'>Adoptions</Link>
+          <Link to='/fr/adoptions'>Adoptions</Link>
         </li>
 
         <li className='mmenu--list__item'>
-          <Link to="/fosters">Fosters</Link>
+          <Link to="/fr/fosters">Famille D’accueil</Link>
         </li>
 
         <li className='mmenu--list__item'>
-          <Link to="/contact">Contact Us</Link>
+          <Link to="/fr/contact">Contactez-nous</Link>
         </li>
 
       </ul>

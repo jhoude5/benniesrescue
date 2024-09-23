@@ -1,0 +1,35 @@
+.fosters {
+    margin-bottom: 120px;
+    .teaser-grid__image {
+        img {
+            width: 177px;
+            height: 177px;
+            border-radius: 100%;
+        }
+    }
+    .teaser-grid__title {
+        font-size: 38px;
+        margin: auto 0;
+    }
+}
+.fostering {
+    margin-bottom: 120px;
+    .application-link {
+        color: $dark-blue;
+        &:hover,
+        &:focus {
+            color: $blue;
+        }
+    }
+    ol,
+    .list {
+        margin-left: 40px;
+    }
+    .list {
+        margin-bottom: 40px;
+    }
+    .application-button {
+        text-align: center;
+    }
+    
+}

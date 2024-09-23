@@ -2,23 +2,20 @@ import * as React from "react"
 import { graphql } from 'gatsby';
 import Header from '../components/header.js';
 import '../sass/styles.scss';
-// import Footer from "../components/footer";
+import Footer from "../components/footer";
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import Pagination from "../components/pagination.js";
 
 
 
 const Adoptions = ({data, pageContext}) => {
-    console.log(data.allContentfulAdoptions.nodes);
-    
-
   return (
     <div> 
         <main>
           <Header />
           <div className="container">
             <h1>Adoptions</h1>
-          </div>
+          
           
           {data.allContentfulAdoptions.nodes.map((item, index)  => {
                   return (
@@ -41,9 +38,9 @@ const Adoptions = ({data, pageContext}) => {
                 })
               }
           <Pagination pageContext={pageContext} />
-          
+          </div>
         </main>
-        {/* <Footer /> */}
+        <Footer />
     </div>
    
   )
@@ -68,4 +65,5 @@ export const query = graphql`
 
 export default Adoptions
 
+export const Head = () => <title>Adoptions</title>
 

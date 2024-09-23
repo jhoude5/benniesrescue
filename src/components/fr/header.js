@@ -1,8 +1,8 @@
 import React from "react";
 import closeIcon from '../../files/close.svg';
 import PropTypes from 'prop-types';
-import MainMenu from './menu/mainmenu'
-import MobileMenu from './menu/mobilemenu';
+import MainMenu from '../fr/menu/mainmenu';
+import MobileMenu from '../../components/fr/menu/mobilemenu';
 import { Link } from "gatsby";
 
 

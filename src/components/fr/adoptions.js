@@ -60,7 +60,7 @@
 //                   );
 //                 })
 //               }
-//                 <a href='/adoptions'>View full cat-a-logue
+//                 <a href='/adoptions'>Voir le catalogue complet
 //                     <img src={rightarrow} alt="" />
 //                 </a>
 //             </div>

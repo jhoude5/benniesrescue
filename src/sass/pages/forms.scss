@@ -1,0 +1,106 @@
+
+    .contact-us-form,
+    .adoption-application-form,
+    .foster-application-form {
+        padding-bottom: 40px;
+        .required {
+            color: red;
+        }
+        .form-group {
+            padding-bottom: 27px;
+            input,
+            textarea {
+                border: none;
+                background-color: #F5F3F3;
+                border-radius: 4px;
+                padding: 7px;
+                &::placeholder {
+                    color: #868585;
+                    font-family: Inika;
+                }
+            }
+            
+            label {
+                font-weight: bold;
+                float: left;
+                font-family: Inika;
+                font-size: 22px;
+            }
+            label.radio-label,
+            label.checkbox-label {
+                font-weight: normal;
+                font-size: 16px;
+            }
+            .radio-option,
+            .checkbox-option {
+                font-weight: bold;
+                float: left;
+                font-family: Inika;
+                font-size: 22px;
+                width: 100%;
+            }
+            .radio-label-cost {
+                font-weight: normal;
+                font-size: 16px;
+                padding-top: 10px;
+                input {
+                    margin-left: 20px;
+                }
+            }
+            .checkbox-label {
+                width: 100%;
+                // float: left;
+                input {
+                    width: auto;
+                    margin-left: 10px;
+                    // float: left;
+                }
+            }
+        }
+        .form-button {
+            padding-top: 20px;
+            
+            button {
+                background-color: $dark-blue;
+                border: 2px solid $dark-blue !important;
+                color: $white;
+                padding: 14px 57px;
+                border: none;
+                border-radius: 4px;
+                margin-left: 76px;
+                font-weight: bold;
+                @media(min-width: 768px) {
+                    margin-left: 64px;
+                }
+                @media(min-width: 1024px) {
+                    margin-left: 108px;
+                }
+                &:hover,
+                &:focus {
+                    background-color: $white;
+                    color: $dark-blue;
+                }
+            }
+            
+        }
+        textarea {
+            height: 300px;
+        }
+    }
+
+.adoption-application-form,
+.foster-application-form {
+    label {
+        width: 100%;
+    }
+    .radio-label {
+        width: 100%;
+        input {
+            width: auto;
+            margin-left: 10px;
+        }
+    }
+    button {
+        margin-left: 0 !important;
+    }
+}

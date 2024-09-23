@@ -2,6 +2,8 @@ import React from "react";
 import { graphql, useStaticQuery } from 'gatsby';
 import { renderRichText } from 'gatsby-source-contentful/rich-text';
 import { INLINES, BLOCKS, MARKS } from '@contentful/rich-text-types';
+import rightarrow from '../files/rightarrow.png';
+import imageUrl from '../files/pawprints.png';
 
 const SucessStories = () => {
     const data = useStaticQuery(graphql`
@@ -35,7 +37,9 @@ const SucessStories = () => {
   }
 }
   const stories = data.allContentfulSuccessStories.nodes;
-   
+  const divStyles = {
+    backgroundImage: `url(${imageUrl})`,
+  }
     return (
 
         <div className="container">
@@ -46,7 +50,7 @@ const SucessStories = () => {
                       <div className="story-wrapper" id={index}>
                         <div className="story-teaser">
                             <div className="story">{renderRichText(item.story, options)}</div>
-                            <div className="title">{item.name}</div>
+                            <div className="title"><p>{item.name}</p></div>
                                 
                         </div>
                       </div>
@@ -54,6 +58,8 @@ const SucessStories = () => {
                   );
                 })
               }
+              <div className="see-more-link"><a href='/successstories'>
+                See all stories <img src={rightarrow} alt="" /></a></div>
             </div>
         </div>
     );

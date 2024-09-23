@@ -6,10 +6,10 @@ header {
         text-decoration: none;
         margin-right: 15px;
         margin-top: 22px;
-        margin-bottom: -20px;
+        // margin-bottom: -20px;
         &:hover,
         &:focus {
-            text-decoration: underline;
+            color: $blue;
         }
     }
     .home-logo {
@@ -24,7 +24,7 @@ header {
     .btn-header {
         background-color: $red;
         color: $white;
-        padding: 0 15px;
+        padding: 10px 36px;
         border-radius: 3px;
         margin-left: 10px;
         border: none;
@@ -41,6 +41,7 @@ header {
     margin: auto;
     h1.header-title {
         font-family: Risque;
+        padding-top: 0;
     }
     .header-img {
         display: flex;
@@ -52,6 +53,7 @@ header {
     display: flex;
     padding-top: 20px;
     padding-bottom: 53px;
+    float: right;
     @media(min-width: 768px) {
         padding-top: 40px;
     }
