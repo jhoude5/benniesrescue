@@ -15,10 +15,14 @@
         float: right;
         color: $black;
         text-decoration: none;
-        margin-top: 114px;
+        margin-top: 30px;
         font-weight: bold;
-        font-size: 28px;
         margin-right: 5px;
+        font-size: 22px;
+        @media(min-width: 768px) {
+            font-size: 28px;
+            margin-top: 114px;
+        }
         &:hover,
         &:focus {
             img {

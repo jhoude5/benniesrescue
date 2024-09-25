@@ -1,5 +1,8 @@
 footer {
-    margin-top: 100px;
+    margin-top: 40px;
+    @media(min-width: 1024px) {
+        margin-top: 100px;
+    }
     a {
         color: $black;
         text-decoration: none;
@@ -9,20 +12,34 @@ footer {
         }
     }
     .footer-logo {
-        max-width: 229px;
-        margin-bottom: 60px;
+        max-width: 175px;
+        margin-bottom: 30px;
+        @media(min-width: 1024px) {
+            max-width: 229px;
+            margin-bottom: 60px;
+        }
+        
     }
     .footer-menu {
         width: auto;
         list-style-type: none;
-        display: flex;
-        width: 80%;
+        
+        
         justify-content: end;
         font-family: Inika;
+        @media(min-width: 768px) {
+            display: flex;
+        }
+        @media(min-width: 1024px) {
+            width: 80%;
+        }
         li {
             font-weight: bold;
             font-size: 28px;
-            padding: 0 40px;
+            padding: 0 10px;
+            @media(min-width: 1024px) {
+                padding: 0 40px;
+            }
             ul {
                 list-style-type: none;
                 padding: 0;
@@ -36,7 +53,11 @@ footer {
     }
     .address, 
     .contact {
-        width: 50%;
+        
+        @media(min-width: 768px) {
+            width: 50%;
+
+        }
         p {
             font-family: Inika;
             font-size: 20px;
@@ -51,28 +72,66 @@ footer {
         }
         
     }
+    .address {
+        margin-top: 40px;
+        padding: 0 20px;
+        @media(min-width: 768px) {
+            margin-top: 0;
+        }
+    }
     .contact {
-        display: flex;
-        justify-content: end;
+        padding: 0 20px;
+        margin-top: 40px;
+        @media(min-width: 768px) {
+            padding: 0;
+            display: flex;
+            justify-content: end;
+            margin-top: 0;
+        }
     }
     .info-row {
-        display: flex;
+        display: block;
+        @media(min-width: 768px) {
+            display: flex;
+            margin-top: 40px;
+        }
+        
     }
     .footer-bottom {
         display: flex;
+        flex-direction: column-reverse;
+        @media(min-width: 768px) {
+            flex-direction: row;
+        }
         
         .copyright {
             width: 100%;
             margin-top: 30px;
+            @media(min-width: 768px) {
+                margin-top: 0;
+                position: relative;
+            }
             p {
             font-size: 16px;
+            @media(min-width: 768px) {
+                position: absolute;
+                bottom: 0;
+            }
             }
         }
         .footer-donate-btn {
-            justify-content: end;
+            margin-top: 40px;
+            @media(min-width: 1024px) {
+                justify-content: end;
+                margin-top: 0;
+            }
+            
             width: 100%;
             p {
-                float: right;
+                @media(min-width: 768px) {
+                    float: right;
+                }
+                
                 a.btn {
                     background-color: $red;
                     color: $white;

@@ -13,23 +13,23 @@ const Footer = () => {
                     <ul className="footer-menu">
                         <li><a href='/about'>About</a>
                             <ul>
-                                <li><a href='/volunteer'>Volunteer</a></li>
-                                <li><a href='/board-members'>Board Members</a></li>
-                                <li><a href='/spay-neuter'>Low Cost Spay/Neuter</a></li>
+                                <li><a href='/en/about/volunteer'>Volunteer</a></li>
+                                <li><a href='/en/about/board-members'>Board Members</a></li>
+                                <li><a href='/en/about/spay-neuter'>Low Cost Spay/Neuter</a></li>
                             </ul>
                         </li>
                         <li><a href='/adoptions'>Adoption</a>
                             <ul>
-                                <li><a href='/adoption-application'>Application</a></li>
+                                <li><a href='/en/adoption/adoption-application'>Application</a></li>
                             </ul>
                         </li>
                         <li><a href='/fosters'>Fosters</a>
                             <ul>
-                                <li><a href='/become-a-foster'>How to foster</a></li>
-                                <li><a href='/foster-application'>Application</a></li>
+                                <li><a href='/en/fosters/become-a-foster'>How to foster</a></li>
+                                <li><a href='/en/fosters/foster-application'>Application</a></li>
                             </ul>
                         </li>
-                        <li><a href='/contact'>Contact Us</a></li>
+                        <li><a href='/en/contact'>Contact Us</a></li>
 
                     </ul>
                 </div>

@@ -1,11 +1,11 @@
 import * as React from "react";
-import Header from '../components/fr/header';
-import Footer from '../components/fr/footer';
-import '../sass/styles.scss';
-import Volunteer from "../components/volunteer";
-import imgAllanna from '../files/allanna.jpg';
-import imgDorothy from '../files/dorothy.jpg';
-import imgGeorge from '../files/george.jpg';
+import Header from '../../components/fr/header';
+import Footer from '../../components/fr/footer';
+import '../../sass/styles.scss';
+import Volunteer from "../../components/volunteer";
+import imgAllanna from '../../files/allanna.jpg';
+import imgDorothy from '../../files/dorothy.jpg';
+import imgGeorge from '../../files/george.jpg';
 
 
 const BoardMembers = () => {

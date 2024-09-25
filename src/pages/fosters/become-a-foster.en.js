@@ -1,8 +1,8 @@
 import * as React from "react";
-import Header from '../components/header';
-import Footer from '../components/footer';
-import '../sass/styles.scss';
-import Adopt from "../components/adopt";
+import Header from '../../components/header';
+import Footer from '../../components/footer';
+import '../../sass/styles.scss';
+import Adopt from "../../components/adopt";
 
 
 const BecomeFosters = () => {

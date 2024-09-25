@@ -1,8 +1,8 @@
 import React, { useState } from 'react'; 
-import Header from '../components/fr/header';
-import '../sass/styles.scss';
-import Footer from '../components/fr/footer';
-import Volunteer from '../components/volunteer';
+import Header from '../../components/fr/header';
+import '../../sass/styles.scss';
+import Footer from '../../components/fr/footer';
+import Volunteer from '../../components/volunteer';
 
 
 const AdoptionApplication = () => {

@@ -1,6 +1,6 @@
 header {
     .language-switcher {
-        display: flex;
+        display: none;
         justify-content: end;
         color: $black;
         text-decoration: none;
@@ -9,6 +9,9 @@ header {
         &:hover,
         &:focus {
             color: $blue;
+        }
+        @media(min-width: 1024px) {
+            display: flex;
         }
     }
     .home-logo {
@@ -41,7 +44,16 @@ header {
     h1.header-title {
         font-family: Risque;
         padding-top: 0;
-        font-size: 100px;
+        font-size: 68px;
+        @media(min-width: 768px) {
+            font-size: 78px;
+        }
+        @media(min-width: 1024px) {
+            font-size: 90px;
+        }
+        @media(min-width: 1400px) {
+            font-size: 100px;
+        }
     }
     .header-img {
         display: flex;
@@ -53,11 +65,13 @@ header {
     display: flex;
     padding-top: 20px;
     padding-bottom: 53px;
-    float: right;
+    max-width: 300px;
     @media(min-width: 768px) {
         padding-top: 40px;
+        max-width: 400px;
+        float: right;
     }
-    @media(min-width: 768px) {
+    @media(min-width: 1024px) {
         padding-top: 80px;
     }
     

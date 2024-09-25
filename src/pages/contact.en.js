@@ -40,21 +40,21 @@ const Contact = () => {
                 <input type="hidden" name="bot-field" />
                 <div className="row clearfix">
                     <div className=" form-group">
-                        <label className='col-3 col-sm-2 col-md-1'>Name <span className='required'>*</span></label>
-                        <input  className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
+                        <label for="name">Name <span className='required'>*</span></label>
+                        <input id="name" onChange={({ target }) => setName(target.value)}
                           type="text" required name="name" value={name} minLength="3" placeholder="Your Full Name" />
                     </div>
 
                     <div className="form-group">
-                        <label className='col-3 col-sm-2 col-md-1'>Email <span className='required'>*</span></label>
-                        <input className='col-9 col-sm-10 col-md-11' type="email"
+                        <label for="email">Email <span className='required'>*</span></label>
+                        <input id="email" className='col-md-11' type="email"
                             name="email" value={email} required
                             onChange={({ target }) => setEmail(target.value)} placeholder="Your Email" />
                     </div>
 
                     <div className="form-group">
-                        <label className='col-3 col-sm-2 col-md-1'>Message <span className='required'>*</span></label>
-                        <textarea  className='col-9 col-sm-10 col-md-11' name="message" placeholder="Message" required onChange={({ target }) => setMessage(target.value)}
+                        <label for="message">Message <span className='required'>*</span></label>
+                        <textarea id="message" name="message" placeholder="Message" required onChange={({ target }) => setMessage(target.value)}
                             value={message}></textarea>
                     </div>
 

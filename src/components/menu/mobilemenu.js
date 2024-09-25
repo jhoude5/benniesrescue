@@ -26,6 +26,7 @@ const MobileMenu = (props) => {
         </li>
 
       </ul>
+      <Link className='language-switcher' to='/en'>Français</Link>
     </Menu>
   );
 };

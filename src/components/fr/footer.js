@@ -13,20 +13,20 @@ const Footer = () => {
                     <ul className="footer-menu">
                         <li><a href='/fr/about'>À propos</a>
                             <ul>
-                                <li><a href='/fr/volunteer'>Volunteer</a></li>
-                                <li><a href='/fr/board-members'>Membres du conseil d'administration</a></li>
-                                <li><a href='/fr/spay-neuter'>Stérilisation à faible coût</a></li>
+                                <li><a href='/fr/about/volunteer'>Volunteer</a></li>
+                                <li><a href='/fr/about/board-members'>Membres du conseil d'administration</a></li>
+                                <li><a href='/fr/about/spay-neuter'>Stérilisation à faible coût</a></li>
                             </ul>
                         </li>
                         <li><a href='/fr/adoptions'>Adoption</a>
                             <ul>
-                                <li><a href='/fr/adoption-application'>Application</a></li>
+                                <li><a href='/fr/adoption/adoption-application'>Application</a></li>
                             </ul>
                         </li>
                         <li><a href='/fr/fosters'>Famille D’accueil</a>
                             <ul>
-                                <li><a href='/fr/become-a-foster'>Comment famille d'accueil</a></li>
-                                <li><a href='/fr/foster-application'>Application</a></li>
+                                <li><a href='/fr/fosters/become-a-foster'>Comment famille d'accueil</a></li>
+                                <li><a href='/fr/fosters/foster-application'>Application</a></li>
                             </ul>
                         </li>
                         <li><a href='/fr/contact'>Contactez-nous</a></li>
