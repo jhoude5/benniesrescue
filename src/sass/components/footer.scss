@@ -23,8 +23,6 @@ footer {
     .footer-menu {
         width: auto;
         list-style-type: none;
-        
-        
         justify-content: end;
         font-family: Inika;
         @media(min-width: 768px) {
@@ -121,12 +119,12 @@ footer {
         }
         .footer-donate-btn {
             margin-top: 40px;
+            width: 100%;
             @media(min-width: 1024px) {
                 justify-content: end;
                 margin-top: 0;
             }
             
-            width: 100%;
             p {
                 @media(min-width: 768px) {
                     float: right;
