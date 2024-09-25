@@ -42,25 +42,25 @@ const IndexPage = () => {
       <section className="stats">
         <div className="container">
           <div className="row">
-            <p>In 2023 we had <span className="bold">307</span> adoptions</p>
+            <p>En 2023, nous avons eu <strong>307</strong> adoptions</p>
           </div>
         </div>
       </section>
       <section className="services">
-        <h2>Services Offered</h2>
+        <h2>Services offerts</h2>
         <div className="container">
           <div className="row service-wrapper">
             <div className="service col-md-4">
               <img src={trap} alt=''/>
-              <p>Trap Neuter and Release</p>
+              <p>Capturer, stériliser et relâcher</p>
             </div>
             <div className="service col-md-4 adopt">
               <img src={adopt} alt='' />
-              <p>Affordable Adoptions</p>
+              <p>Adoptions abordables</p>
             </div>
             <div className="service col-md-4">
               <img src={spayneuter} alt=''/>
-              <p>Low cost Spay and Neutering</p>
+              <p>Stérilisation à faible coût</p>
             </div>
           </div>
         </div>
@@ -72,7 +72,7 @@ const IndexPage = () => {
         <Adoptions />
       </section>
       <section className="sponsors">
-        <h2>Sponsors</h2>
+        <h2>Commanditaires</h2>
         <div className="container">
           <div className="row">
             <div className="col-md-12">

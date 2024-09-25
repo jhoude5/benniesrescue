@@ -14,7 +14,7 @@ const BoardMembers = () => {
       <Header />
       <div className="board-members container">
         <div className="row">
-            <h1>Board Members</h1>
+            <h1>Membres du conseil d'administration</h1>
             <div className="col-md-4">
               <div className="board-img">
                 <img src={imgAllanna}  alt='allana courte'/>
@@ -34,7 +34,7 @@ const BoardMembers = () => {
               <div className="board-img">
                 <img src={imgGeorge} alt='Goerge Fletcher'/>
               </div>
-              <h2>Goerge Fletcher</h2>
+              <h2>George Fletcher</h2>
               <p>PDG et propriétaire de Sauvetage Bennie's</p>
             </div>
             
@@ -50,4 +50,4 @@ const BoardMembers = () => {
 
 export default BoardMembers
 
-export const Head = () => <title>Board Members</title>
+export const Head = () => <title>Membres du conseil d'administration</title>

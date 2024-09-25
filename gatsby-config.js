@@ -3,8 +3,8 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `benniesrescue`,
-    siteUrl: `https://www.yourdomain.tld`
+    title: `Sauvetage Bennies Rescue`,
+    siteUrl: `https://www.sauvetagebenniesrescue.ca`
   },
   plugins: ["gatsby-plugin-sass", "gatsby-plugin-image", "gatsby-plugin-sharp", "gatsby-transformer-sharp", {
     resolve: 'gatsby-source-filesystem',

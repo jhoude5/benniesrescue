@@ -1,8 +1,8 @@
 import React, { useState } from 'react'; 
-import Header from '../components/header';
+import Header from '../components/fr/header';
 import '../sass/styles.scss';
-import Footer from '../components/footer';
-import Volunteer from '../components/volunteer';
+import Footer from '../components/fr/footer';
+import Volunteer from '../components/fr/volunteer';
 
 
 const FosterApplication = () => {
@@ -93,7 +93,7 @@ const FosterApplication = () => {
     <main>
       <Header />
       <div className="container">
-            <h1>Foster Application</h1>
+            <h1>Damille D'Accueil Application</h1>
             <form className='foster-application-form' name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field"
               onSubmit={handleSubmit} id="contact-form">
                 <input type="hidden" name="form-name" value="contact" />
@@ -103,76 +103,76 @@ const FosterApplication = () => {
                         <label for="email">Email <span className='required'>*</span></label>
                         <input id="email" className='col-9 col-sm-10 col-md-11' type="email"
                             name="email" value={email} required
-                            onChange={({ target }) => setEmail(target.value)} placeholder="Your Answer" />
+                            onChange={({ target }) => setEmail(target.value)} placeholder="Votre Réponse" />
                     </div>
                     <div className=" form-group">
-                        <label for="name">First and Last Name <span className='required'>*</span></label>
+                        <label for="name">Nom et prénom <span className='required'>*</span></label>
                         <input id="name" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
-                          type="text" required name="name" value={name} minLength="3" placeholder="Your Answer" />
+                          type="text" required name="name" value={name} minLength="3" placeholder="Votre Réponse" />
                     </div>
                     <div className=" form-group">
-                        <div className='radio-option'>Are you 18 years of age or older? <span className='required'>*</span></div>
-                        <label className='radio-label' for="ageyes">Yes<input id="ageyes" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
+                        <div className='radio-option'>Avez-vous 18 ans ou plus?<span className='required'>*</span></div>
+                        <label className='radio-label' for="ageyes">Oui<input id="ageyes" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
                           type="radio" required name="age" value={age} minLength="3"  /></label>
-                          <label  className='radio-label' for="ageno">No<input id='ageno' className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
+                          <label  className='radio-label' for="ageno">Non<input id='ageno' className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
                           type="radio" required name="age" value={age} minLength="3"  /></label>
                     </div>
                     <div className=" form-group">
-                        <label for="phone">Phone Number <span className='required'>*</span></label>
+                        <label for="phone">Numéro de téléphone<span className='required'>*</span></label>
                         <input id="phone" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
-                          type="text" required name="phone" value={phone} minLength="3" placeholder="Your Answer" />
+                          type="text" required name="phone" value={phone} minLength="3" placeholder="Votre Réponse" />
                     </div>
                     <div className=" form-group">
-                        <label for="address">Full Address (street address, municipality/city, province, postal code) <span className='required'>*</span></label>
+                        <label for="address">Adresse complète (adresse postale, municipalité/ville, province, code postal) <span className='required'>*</span></label>
                         <input id="address" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
-                          type="text" required name="address" value={address} minLength="3" placeholder="Your Answer" />
+                          type="text" required name="address" value={address} minLength="3" placeholder="Votre Réponse" />
                     </div>
                     <div className=" form-group">
-                        <label for="why">Why do you want to foster cats? <span className='required'>*</span></label>
+                        <label for="why">Pourquoi voulez-vous accueillir des chats ? <span className='required'>*</span></label>
                         <input id="why" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
-                          type="text" required name="why" value={why} minLength="3" placeholder="Your Answer" />
+                          type="text" required name="why" value={why} minLength="3" placeholder="Votre Réponse" />
                     </div>
                     <div className=" form-group">
-                        <div className='radio-option'>Do you own or rent your home? <span className='required'>*</span></div>
-                        <label for="homerent" className='radio-label'>Ren<input id="homerent" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
+                        <div className='radio-option'>Êtes-vous propriétaire ou locataire de votre maison? <span className='required'>*</span></div>
+                        <label for="homerent" className='radio-label'>Louer<input id="homerent" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
                           type="radio" required name="home" value={home} minLength="3" /></label>
-                          <label for="homeown" className='radio-label'>Own<input id="homeown" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
+                          <label for="homeown" className='radio-label'>Propre<input id="homeown" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
                           type="radio" required name="home" value={home} minLength="3" /></label>
                     </div>
                     <div className=" form-group">
-                        <div className='radio-option'>If you rent your home, does the owner of the property allow animal fostering? <span className='required'>*</span></div>
-                        <label className='radio-label' for="allowyes">Yes<input id="allowyes" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
+                        <div className='radio-option'>Si vous louez votre logement, le propriétaire du bien autorise-t-il l'accueil d'animaux ? <span className='required'>*</span></div>
+                        <label className='radio-label' for="allowyes">Oui<input id="allowyes" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
                           type="radio" required name="allow" value={allow} minLength="3" /></label>
-                          <label className='radio-label' for="allowno">No<input id="allowno" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
+                          <label className='radio-label' for="allowno">Non<input id="allowno" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
                           type="radio" required name="allow" value={allow} minLength="3" /></label>
-                          <label className='radio-label' for="allowna">Not Applicable<input id="allowna" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
+                          <label className='radio-label' for="allowna">Non Applicable<input id="allowna" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
                           type="radio" required name="allow" value={allow} minLength="3" /></label>
                     </div>
                     <div className=" form-group">
-                        <div className='radio-option'>Do you or any other individuals smoke inside the home? <span className='required'>*</span></div>
-                        <label className='radio-label' for="smokeyes">Yes<input id="smokeyes" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
+                        <div className='radio-option'>Est-ce que vous ou d’autres personnes fumez à l’intérieur de la maison ? <span className='required'>*</span></div>
+                        <label className='radio-label' for="smokeyes">Oui<input id="smokeyes" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
                           type="radio" required name="smoke" value={smoke} minLength="3" /></label>
-                          <label className='radio-label' for="smokeno">No<input id="smokeno" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
+                          <label className='radio-label' for="smokeno">Non<input id="smokeno" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
                           type="radio" required name="smoke" value={smoke} minLength="3" /></label>
                     </div>
                     <div className=" form-group">
-                        <div className='radio-option'>Do you currently own any pets?<span className='required'>*</span></div>
-                        <label className='radio-label' for="yescats">Yes, cat(s)<input id="yescats" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
+                        <div className='radio-option'>Possédez-vous actuellement des animaux de compagnie ?<span className='required'>*</span></div>
+                        <label className='radio-label' for="yescats">Oui, chat(s)<input id="yescats" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
                           type="radio" required name="otherpets" value={otherpets} minLength="3"  /></label>
-                          <label className='radio-label' for="yesdogs">Yes, dog(s)<input id="yesdogs" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
+                          <label className='radio-label' for="yesdogs">Oui, chien(s)<input id="yesdogs" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
                           type="radio" required name="otherpets" value={otherpets} minLength="3"  /></label>
-                          <label className='radio-label' for="both">Both cat(s) and dog(s)<input id="both" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
+                          <label className='radio-label' for="both">Les chats et les chiens<input id="both" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
                           type="radio" required name="otherpets" value={otherpets} minLength="3"  /></label>
-                          <label className='radio-label' for="nopets">I do not own any pets<input id="nopets" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
+                          <label className='radio-label' for="nopets">Je n'ai pas d'animaux de compagnie<input id="nopets" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
                           type="radio" required name="otherpets" value={otherpets} minLength="3"  /></label>
-                          <label className='radio-label' for="other">Other<input id="other" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
+                          <label className='radio-label' for="other">Autre<input id="other" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
                           type="radio" required name="otherpets" value={otherpets} minLength="3"  /></label>
                     </div>
 
 
                     <div className=" form-group">
-                        <div className='radio-option'>If you currently own pets, are you able and willing to isolate foster animals from family pets within the home, as required? This includes a mandatory 7 day quarantine period for new fosters.</div>
-                        <div>During the initial quarantine period, the fosterer must notify Bennie's Rescue of any sign of parasite, infection or disease.</div>
+                        <div className='radio-option'>Si vous possédez actuellement des animaux de compagnie, êtes-vous en mesure et disposé à isoler les animaux d'accueil des animaux de compagnie de la famille au sein du foyer, comme requis ? Cela comprend une période de quarantaine obligatoire de 7 jours pour les nouveaux animaux d'accueil.</div>
+                        <div>Pendant la période de quarantaine initiale, le parent d'accueil doit informer Sauvetage Bennie's de tout signe de parasite, d'infection ou de maladie.</div>
                         <label className='radio-label' for="quarantineyes">Yes<input id="quarantineyes" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
                           type="radio" required name="quarantine" value={quarantine} minLength="3"  /></label>
                           <label className='radio-label' for="quarantineno">No<input id="quarantineno" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
@@ -181,177 +181,177 @@ const FosterApplication = () => {
                           type="radio" required name="quarantine" value={quarantine} minLength="3"  /></label>
                     </div>
                     <div className=" form-group">
-                        <div className='radio-option'>Can you ensure that existing animals in the foster home are spayed or neutered, are up to date on all vaccinations and are free of any known parasites or diseases?<span className='required'>*</span></div>
-                        <label className='radio-label' for="vaccinationsyes">Yes<input id="vaccinationsyes" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
+                        <div className='radio-option'>Pouvez-vous garantir que les animaux présents dans le foyer d'accueil sont stérilisés, à jour de tous leurs vaccins et exempts de tout parasite ou maladie connu ?<span className='required'>*</span></div>
+                        <label className='radio-label' for="vaccinationsyes">Oui<input id="vaccinationsyes" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
                           type="radio" required name="vaccinations" value={vaccinations} minLength="3"  /></label>
-                          <label className='radio-label' for="vaccinationsno">No<input id="vaccinationsno" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
+                          <label className='radio-label' for="vaccinationsno">Non<input id="vaccinationsno" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
                           type="radio" required name="vaccinations" value={vaccinations} minLength="3"  /></label>
-                          <label className='radio-label' for="vaccinationsna">Not Applicable<input id="vaccinationsna" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
+                          <label className='radio-label' for="vaccinationsna">Non Applicable<input id="vaccinationsna" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
                           type="radio" required name="vaccinations" value={vaccinations} minLength="3"  /></label>
                     </div>
                     <div className=" form-group">
-                        <div className='radio-option'>Do you have access to transportation or are you able to advise Bennie's Rescue of any required transportation assistance as soon as it is known?<span className='required'>*</span></div>
-                        <label className='radio-label' for="transportyes">I have access to a vehicle<input id="transportyes" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
+                        <div className='radio-option'>Avez-vous accès à un moyen de transport ou êtes-vous en mesure d'informer Sauvetage Bennie's de toute assistance en matière de transport requise dès qu'elle est connue ?<span className='required'>*</span></div>
+                        <label className='radio-label' for="transportyes">J'ai accès à un véhicule<input id="transportyes" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
                           type="radio" required name="transport" value={transport} minLength="3" /></label>
-                          <label className='radio-label' for="transportno">I do not have access to a vehicle, but I will advise Bennie's Rescue of any required transportation assistance as soon as it is know.<input id="transportno" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
+                          <label className='radio-label' for="transportno">Je n'ai pas accès à un véhicule, mais j'informerai Sauvetage Bennie's de toute assistance de transport requise dès que je le saurai.<input id="transportno" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
                           type="radio" required name="transport" value={transport} minLength="3" /></label>
                     </div>
                     <div className=" form-group">
-                        <div className='checkbox-option'>Do you currently share a home with individuals under the age of 18?<span className='required'>*</span></div>
-                        <label className='checkbox-label' for="childrenunderfive">Yes, I share a home with individual(s) under 5 years of age<input id="childrenyes" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
+                        <div className='checkbox-option'>Partagez-vous actuellement un logement avec des personnes de moins de 18 ans ?<span className='required'>*</span></div>
+                        <label className='checkbox-label' for="childrenunderfive">Oui, je partage un logement avec une ou plusieurs personnes de moins de 5 ans<input id="childrenyes" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
                           type="checkbox" required name="children" value={children} minLength="3" /></label>
-                          <label className='checkbox-label' for="childrenbetweenfiveandten">Yes, I share a home with indivudual(s) between the ages of 5 and 10<input id="childrenbetweenfiveandten" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
+                          <label className='checkbox-label' for="childrenbetweenfiveandten">Oui, je partage un logement avec des personnes âgées de 5 à 10 ans<input id="childrenbetweenfiveandten" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
                           type="checkbox" required name="children" value={children} minLength="3" /></label>
-                          <label className='checkbox-label' for="childrenbetweentenandeighteen">Yes, I share a home with individual(s) between the ages of 10 and 18<input id="childrenbetweentenandeighteen" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
+                          <label className='checkbox-label' for="childrenbetweentenandeighteen">Oui, je partage un logement avec des personnes âgées de 10 à 18 ans<input id="childrenbetweentenandeighteen" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
                           type="checkbox" required name="children" value={children} minLength="3" /></label>
-                          <label className='checkbox-label' for="childrenno">No<input id="childrenno" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
+                          <label className='checkbox-label' for="childrenno">Non<input id="childrenno" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
                           type="checkbox" required name="children" value={children} minLength="3" /></label>
                     </div>
                     <div className=" form-group">
-                        <div className='radio-option'>Do you currently share a home with any other adults?<span className='required'>*</span></div>
-                        <label className='radio-label' for="otheradultsyes">Yes<input id="otheradultsyes" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
+                        <div className='radio-option'>Partagez-vous actuellement un logement avec d’autres adultes ?<span className='required'>*</span></div>
+                        <label className='radio-label' for="otheradultsyes">Oui<input id="otheradultsyes" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
                           type="radio" required name="otheradults" value={otheradults} minLength="3" /></label>
-                          <label className='radio-label' for="otheradultsno">No<input id="otheradultsno" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
+                          <label className='radio-label' for="otheradultsno">Non<input id="otheradultsno" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
                           type="radio" required name="otheradults" value={otheradults} minLength="3" /></label>
                     </div>
                     <div className=" form-group">
-                        <div className='radio-option'>Are the other members of the household aware of and do they agree to the commitment involved with fostering?<span className='required'>*</span></div>
-                        <label className='radio-label' for="otheradultsawareyes">Yes<input id="otheradultsawareyes" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
+                        <div className='radio-option'>Les autres membres du foyer sont-ils conscients et acceptent-ils l’engagement qu’implique le fait d’être parent d’accueil ?<span className='required'>*</span></div>
+                        <label className='radio-label' for="otheradultsawareyes">Oui<input id="otheradultsawareyes" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
                           type="radio" required name="otheradultsaware" value={otheradultsaware} minLength="3" /></label>
-                          <label className='radio-label' for="otheradultsawareno">No<input id="otheradultsawareno" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
+                          <label className='radio-label' for="otheradultsawareno">Non<input id="otheradultsawareno" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
                           type="radio" required name="otheradultsaware" value={otheradultsaware} minLength="3" /></label>
-                          <label className='radio-label' for="otheradultsawarena">Not Applicable<input id="otheradultsawarena" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
+                          <label className='radio-label' for="otheradultsawarena">Non Applicable<input id="otheradultsawarena" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
                           type="radio" required name="otheradultsaware" value={otheradultsaware} minLength="3" /></label>
                     </div>
                     <div className=" form-group">
-                        <div className='radio-option'>Are any members of the household allergic to cats?<span className='required'>*</span></div>
-                        <label className='radio-label' for="allergicyes">Yes<input id="allergicyes" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
+                        <div className='radio-option'>Y a-t-il des membres de la famille allergiques aux chats ?<span className='required'>*</span></div>
+                        <label className='radio-label' for="allergicyes">Oui<input id="allergicyes" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
                           type="radio" required name="allergic" value={allergic} minLength="3" /></label>
-                          <label className='radio-label' for="allergicno">No<input id="allergicno" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
+                          <label className='radio-label' for="allergicno">Non<input id="allergicno" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
                           type="radio" required name="allergic" value={allergic} minLength="3" /></label>
-                          <label className='radio-label' for="allergicna">Not Applicable<input id="allergicna" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
+                          <label className='radio-label' for="allergicna">Non Applicable<input id="allergicna" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
                           type="radio" required name="allergic" value={allergic} minLength="3" /></label>
                     </div>
                     <div className=" form-group">
-                        <div className='radio-option'>Do you have or do you plan on acquiring a litter box, food bowls, a scale that measures grams and ounces/pounds (such as a kitchen scale) and an animal carrier?<span className='required'>*</span></div>
-                        <div>(Bennie's Rescue may provide animal care supplies if available.)</div>
-                        <label className='radio-label' for="accessoriesyes">Yes<input id="accessoriesyes" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
+                        <div className='radio-option'>Avez-vous ou prévoyez-vous acquérir un bac à litière, des bols de nourriture, une balance qui mesure les grammes et les onces/livres (comme une balance de cuisine) et un sac de transport pour animaux ?<span className='required'>*</span></div>
+                        <div>(Sauvetage Bennie's peut fournir des fournitures de soins aux animaux si disponibles.)</div>
+                        <label className='radio-label' for="accessoriesyes">Oui<input id="accessoriesyes" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
                           type="radio" required name="accessories" value={accessories} minLength="3"  /></label>
-                          <label className='radio-label' for="accessoriesno">No<input id="accessoriesno" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
+                          <label className='radio-label' for="accessoriesno">Non<input id="accessoriesno" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
                           type="radio" required name="accessories" value={accessories} minLength="3"  /></label>
                     </div>
                     <div className=" form-group">
-                        <div className='checkbox-option'>Do you want to foster adult cats, senior cats, mother cats with kittens, kittens no longer with their mother, or cat(s) requiring special care (socialising or medical care)?<span className='required'>*</span></div>
-                        <label className='checkbox-label' for="typeadult">Adult cats<input id="typeadult" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
+                        <div className='checkbox-option'>Vous souhaitez accueillir des chats adultes, des chats seniors, des chattes avec des chatons, des chatons qui ne sont plus avec leur mère, ou un ou plusieurs chats nécessitant des soins particuliers (socialisation ou soins médicaux) ?<span className='required'>*</span></div>
+                        <label className='checkbox-label' for="typeadult">Chats adultes<input id="typeadult" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
                           type="checkbox" required name="type" value={type} minLength="3" /></label>
-                          <label className='checkbox-label' for="typesenior">Senior cats<input id="typeseniot" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
+                          <label className='checkbox-label' for="typesenior">Chats âgés<input id="typeseniot" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
                           type="checkbox" required name="type" value={type} minLength="3" /></label>
-                          <label className='checkbox-label' for="typemotherkitten">Mother cat with their kitten(s)<input id="typemotherkitten" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
+                          <label className='checkbox-label' for="typemotherkitten">Mère chatte avec ses chatons<input id="typemotherkitten" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
                           type="checkbox" required name="type" value={type} minLength="3" /></label>
-                          <label className='checkbox-label' for="kitten">Kitten(s) no longer with their mother<input id="kitten" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
+                          <label className='checkbox-label' for="kitten">Chaton(s) qui n'est(ent) plus avec sa mère<input id="kitten" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
                           type="checkbox" required name="type" value={type} minLength="3" /></label>
-                          <label className='checkbox-label' for="catspecialcare">Cat(s) requiring special care<input id="catspecialcare" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
+                          <label className='checkbox-label' for="catspecialcare">Chat(s) nécessitant des soins particuliers<input id="catspecialcare" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
                           type="checkbox" required name="type" value={type} minLength="3" /></label>
-                          <label className='checkbox-label' for="any">Any of the above<input id="any" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
+                          <label className='checkbox-label' for="any">L'un des éléments ci-dessus<input id="any" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
                           type="checkbox" required name="type" value={type} minLength="3" /></label>
                     </div>
                     <div className=" form-group">
-                        <div className='radio-option'>Do you want to foster animals indefinitely, during "kitten season" or only until you find an animal to adopt?<span className='required'>*</span></div>
-                        <label className='radio-label' for="longterm">Long-Term<input id="longterm" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
+                        <div className='radio-option'>Souhaitez-vous accueillir des animaux de façon indéfinie, pendant la « saison des chatons » ou seulement jusqu'à ce que vous trouviez un animal à adopter ?<span className='required'>*</span></div>
+                        <label className='radio-label' for="longterm">À long terme<input id="longterm" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
                           type="radio" required name="lengthtype" value={lengthtype} minLength="3"/></label>
-                          <label className='radio-label' for="kittenseason">During "kitten season" (May to October)<input id="kittenseason" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
+                          <label className='radio-label' for="kittenseason">Pendant la « saison des chatons » (de mai à octobre)<input id="kittenseason" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
                           type="radio" required name="lengthtype" value={lengthtype} minLength="3"/></label>
-                          <label className='radio-label' for="untiladopt">Until I find an animal to adopt<input id="untiladopt" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
+                          <label className='radio-label' for="untiladopt">En attendant de trouver un animal à adopter<input id="untiladopt" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
                           type="radio" required name="lengthtype" value={lengthtype} minLength="3"/></label>
                     </div>
                     <div className=" form-group">
-                        <div className='radio-option'>Are you interested in fostering animals short term (animals necessitating short-term medical treatments requiring quarantine, in emergency situations or new intake animals requiring quarantine - normally 2-3 weeks) or are you interested in fostering animals long term (from intake until adoption - normally 12-16 weeks)?<span className='required'>*</span></div>
-                        <label className='radio-label' for="short">Short Term (2-3 weeks)<input id="short" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
+                        <div className='radio-option'>Êtes-vous intéressé à accueillir des animaux à court terme (animaux nécessitant des traitements médicaux à court terme nécessitant une quarantaine, dans des situations d'urgence ou de nouveaux animaux admis nécessitant une quarantaine - normalement 2 à 3 semaines) ou êtes-vous intéressé à accueillir des animaux à long terme (de l'admission jusqu'à l'adoption - normalement 12 à 16 semaines) ?<span className='required'>*</span></div>
+                        <label className='radio-label' for="short">Court terme (2-3 semaines)<input id="short" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
                           type="radio" required name="shortlong" value={shortlong} minLength="3"  /></label>
-                          <label className='radio-label' for="long">Long Term (12-16 weeks)<input id="long" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
+                          <label className='radio-label' for="long">Long terme (12-16 semaines)<input id="long" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
                           type="radio" required name="shortlong" value={shortlong} minLength="3"  /></label>
-                          <label className='radio-label' for="both">Both<input id="both" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
+                          <label className='radio-label' for="both">Les deux<input id="both" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
                           type="radio" required name="shortlong" value={shortlong} minLength="3"  /></label>
                     </div>
                     <div className=" form-group">
-                        <div className='radio-option'>Do you plan on crating the animal(s) or allowing them to free roam in their designated space?<span className='required'>*</span></div>
-                        <label className='radio-label' for="fulltime">Crating full time<input id="fulltime" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
+                        <div className='radio-option'>Prévoyez-vous de créer les animaux) ou de les laisser se déplacer librement dans l'espace qui leur est désigné ?<span className='required'>*</span></div>
+                        <label className='radio-label' for="fulltime">Mise en caisse à temps plein<input id="fulltime" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
                           type="radio" required name="crating" value={crating} minLength="3" /></label>
-                          <label className='radio-label' for="nighttime">Crating at night only and allowing free roam during the day<input id="nighttime" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
+                          <label className='radio-label' for="nighttime">Mise en cage la nuit uniquement et libre circulation pendant la journée<input id="nighttime" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
                           type="radio" required name="crating" value={crating} minLength="3" /></label>
-                          <label className='radio-label' for="roamfree">Allowing free roam at all times (within their designated space in the foster home)<input id="roamfree" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
+                          <label className='radio-label' for="roamfree">Permettre aux animaux de se déplacer librement à tout moment (dans l'espace qui leur est attribué dans le foyer d'accueil)<input id="roamfree" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
                           type="radio" required name="crating" value={crating} minLength="3" /></label>
                     </div>
                     <div className=" form-group">
-                        <div className='radio-option'>Are you willing and able to socialize and train the animal and advise PRUR of any socialization or behavioral issues?<span className='required'>*</span></div>
-                        <div>(This may include litter training, accustomizing the animal to human interaction, etc.)</div>
-                        <label className='radio-label' for="socialyes">Yes<input id="socialyes" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
+                        <div className='radio-option'>Êtes-vous disposé et capable de socialiser et de dresser l'animal et d'informer Sauvetage Bennie's de tout problème de socialisation ou de comportement ?<span className='required'>*</span></div>
+                        <div>(Cela peut inclure l’apprentissage de la litière, l’accoutumance de l’animal à l’interaction humaine, etc.)</div>
+                        <label className='radio-label' for="socialyes">Oui<input id="socialyes" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
                           type="radio" required name="socialize" value={socialize} minLength="3" /></label>
-                          <label className='radio-label' for="socialno">No<input id="socialno" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
+                          <label className='radio-label' for="socialno">Non<input id="socialno" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
                           type="radio" required name="socialize" value={socialize} minLength="3" /></label>
                     </div>
                     <div className=" form-group">
-                        <div className='radio-option'>Are you willing and able to provide basic medical attention to the animal if the animal requires the administration of medications or other special medical attention as recommended by a veterinarian?<span className='required'>*</span></div>
-                        <div>This may include oral medications, eye/ear drops/cleaning, flea medications, or other medical treatments. This does not include veterenarian visits, which are coordinated, handled and paid for by Bennie's Rescue.</div>
-                        <label className='radio-label' for="medicalyes">Yes<input id="medicalyes" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
+                        <div className='radio-option'>Êtes-vous disposé et capable de fournir des soins médicaux de base à l’animal si celui-ci nécessite l’administration de médicaments ou d’autres soins médicaux particuliers recommandés par un vétérinaire ?<span className='required'>*</span></div>
+                        <div>Cela peut inclure des médicaments par voie orale, des gouttes/nettoyages pour les yeux/oreilles, des médicaments contre les puces ou d'autres traitements médicaux. Cela n'inclut pas les visites chez le vétérinaire, qui sont coordonnées, gérées et payées par Sauvetage Bennie's.</div>
+                        <label className='radio-label' for="medicalyes">Oui<input id="medicalyes" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
                           type="radio" required name="medical" value={medical} minLength="3"  /></label>
-                          <label className='radio-label' for="medicalno">No<input id="medicalno" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
+                          <label className='radio-label' for="medicalno">Non<input id="medicalno" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
                           type="radio" required name="medical" value={medical} minLength="3"  /></label>
                     </div>
                     <div className=" form-group">
-                        <div className='radio-option'>Are you willing and able to be shown how to provide sub cutaneous fluids to the animal?<span className='required'>*</span></div>
-                        <div>This includes a needle injection under the animal's skin. (If you are not comfortable with this, we will provide you with a foster animal who does not require sub cutaneous fluids.)</div>
-                        <label className='radio-label' for="medicalassistyes">Yes<input id="medicalassistyes" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
+                        <div className='radio-option'>Êtes-vous disposé et capable de voir comment fournir des liquides sous-cutanés à l'animal ?<span className='required'>*</span></div>
+                        <div>Cela comprend une injection à l'aiguille sous la peau de l'animal. (Si vous n'êtes pas à l'aise avec cette méthode, nous vous fournirons un animal d'accueil qui n'a pas besoin de fluides sous-cutanés.)</div>
+                        <label className='radio-label' for="medicalassistyes">Oui<input id="medicalassistyes" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
                           type="radio" required name="medicalassist" value={medicalassist} minLength="3"  /></label>
-                          <label className='radio-label' for="medicalassistno">No<input id="medicalassistno" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
+                          <label className='radio-label' for="medicalassistno">Non<input id="medicalassistno" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
                           type="radio" required name="medicalassist" value={medicalassist} minLength="3"  /></label>
                     </div>
                     <div className=" form-group">
-                        <div className='radio-option'>Are you willing and able to weigh the animal using a scale such as a kitchen scale) if requested by Bennie's Rescue?<span className='required'>*</span></div>
-                        <div> If fostering kittens, the fosterer must weigh the kittens using a small animal or kitchen scale and must record each kitten’s weight on a daily basis for the first 4 weeks of life, and then on a weekly basis thereafter. The fosterer must provide weights for all kittens or cats in their care to PRUR upon request.</div>
-                        <label className='radio-label' for="scaleyes">Yes<input id="scaleyes" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
+                        <div className='radio-option'>Êtes-vous disposé et capable de peser l'animal à l'aide d'une balance telle qu'une balance de cuisine) si Sauvetage Bennie's le demande ?<span className='required'>*</span></div>
+                        <div>Si vous accueillez des chatons, le parent d'accueil doit les peser à l'aide d'une petite balance pour animaux ou d'une balance de cuisine et doit enregistrer le poids de chaque chaton quotidiennement pendant les 4 premières semaines de vie, puis chaque semaine par la suite. Le parent d'accueil doit fournir le poids de tous les chatons ou chats dont il a la garde au Sauvetage Bennie's sur demande.</div>
+                        <label className='radio-label' for="scaleyes">Oui<input id="scaleyes" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
                           type="radio" required name="scale" value={scale} minLength="3" /></label>
-                          <label className='radio-label' for="scaleno">No<input id="scaleno" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
+                          <label className='radio-label' for="scaleno">Non<input id="scaleno" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
                           type="radio" required name="scale" value={scale} minLength="3" /></label>
                     </div>
                     <div className=" form-group">
-                        <div className='radio-option'>Do you currently foster animals for any other rescue organisation or do you plan to during the time period you would be fostering for Bennie's Rescue?<span className='required'>*</span></div>
-                        <label className='radio-label' for="otherfosteryes">Yes<input id="otherfosteryes" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
+                        <div className='radio-option'>Accueillez-vous actuellement des animaux pour une autre organisation de sauvetage ou prévoyez-vous de le faire pendant la période où vous accueilleriez des animaux pour Sauvetage Bennie's?<span className='required'>*</span></div>
+                        <label className='radio-label' for="otherfosteryes">Oui<input id="otherfosteryes" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
                           type="radio" required name="otherfoster" value={otherfoster} minLength="3" /></label>
-                          <label className='radio-label' for="otherfosterno">No<input id="otherfosterno" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
+                          <label className='radio-label' for="otherfosterno">Non<input id="otherfosterno" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
                           type="radio" required name="otherfoster" value={otherfoster} minLength="3" /></label>
                     </div>
                     <div className=" form-group">
-                        <div className='radio-option'>Has any member of the household been convicted of an animal welfare law violation such as neglect, cruelty or abandonment, or any other charge related to animal welfare?<span className='required'>*</span></div>
-                        <label className='radio-label' for="welfareyes">Yes<input id="welfareyes" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
+                        <div className='radio-option'>Un membre du ménage a-t-il été reconnu coupable d’une violation de la loi sur le bien-être animal, comme la négligence, la cruauté ou l’abandon, ou de toute autre accusation liée au bien-être animal ?<span className='required'>*</span></div>
+                        <label className='radio-label' for="welfareyes">Oui<input id="welfareyes" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
                           type="radio" required name="welfare" value={welfare} minLength="3"/></label>
-                          <label className='radio-label' for="welfareno">No<input id="welfareno" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
+                          <label className='radio-label' for="welfareno">Non<input id="welfareno" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
                           type="radio" required name="welfare" value={welfare} minLength="3"/></label>
                     </div>
                     <div className=" form-group">
-                        <div className='radio-option'>Are you willing and able to take a foster animal into your home with 48 hours notice?<span className='required'>*</span></div>
-                        <label className='radio-label' for="shortnoticeyes">Yes<input id="shortnoticeyes" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
+                        <div className='radio-option'>Êtes-vous prêt et capable d'accueillir un animal en famille d'accueil chez vous avec un préavis de 48 heures ?<span className='required'>*</span></div>
+                        <label className='radio-label' for="shortnoticeyes">Oui<input id="shortnoticeyes" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
                           type="radio" required name="shortnotice" value={shortnotice} minLength="3" /></label>
-                          <label className='radio-label' for="shortnoticeno">No<input id="shortnoticeno" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
+                          <label className='radio-label' for="shortnoticeno">Non<input id="shortnoticeno" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
                           type="radio" required name="shortnotice" value={shortnotice} minLength="3" /></label>
-                          <label className='radio-label' for="shortnoticebut">No, but I will be ready to take a foster animal on a specific date.<input id="shortnoticebut" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
+                          <label className='radio-label' for="shortnoticebut">Non, mais je serai prêt à accueillir un animal en famille d'accueil à une date précise.<input id="shortnoticebut" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
                           type="radio" required name="shortnotice" value={shortnotice} minLength="3" /></label>
                     </div>
                     <div className=" form-group">
-                        <label>If you are not willing or able to take a foster animal into your home within 48 hours, what is the delay you need to take in a foster animal?<span className='required'>*</span></label>
+                        <label>Si vous n'êtes pas disposé ou en mesure d'accueillir un animal en famille d'accueil dans votre foyer dans les 48 heures, quel est le délai dont vous avez besoin pour accueillir un animal en famille d'accueil ?<span className='required'>*</span></label>
                         <input  className='col-9 col-sm-10 col-md-3' onChange={({ target }) => setName(target.value)}
                           type="date" required name="date" value={date} minLength="3"  />
                     </div>
                     <div className=" form-group">
-                        <div className='radio-option'>Do you understand and acknowledge that Bennie's Rescue cannot and does not make any guarantees as to the health, temperament, mental disposition, and training of rescued animals, and that fostering animal(s) is at your own risk?<span className='required'>*</span></div>
-                        <label className='radio-label' for="acknowledgeyes">Yes<input id="acknowledgeyes" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
+                        <div className='radio-option'>Comprenez-vous et reconnaissez-vous que Bennie's Rescue ne peut pas et ne donne aucune garantie quant à la santé, au tempérament, à la disposition mentale et à la formation des animaux sauvés, et que l'accueil d'animaux se fait à vos propres risques ?<span className='required'>*</span></div>
+                        <label className='radio-label' for="acknowledgeyes">Oui<input id="acknowledgeyes" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
                           type="radio" required name="acknowledge" value={acknowledge} minLength="3"  /></label>
-                          <label className='radio-label' for="acknowledgeno">No<input id="acknowledgeno" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
+                          <label className='radio-label' for="acknowledgeno">Non<input id="acknowledgeno" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
                           type="radio" required name="acknowledge" value={acknowledge} minLength="3"  /></label>
                     </div>
                     <div className="form-group">
                         <label>Do you have any questions about fostering for Bennie's Rescue? <span className='required'>*</span></label>
-                        <input type="text"  className='col-9 col-sm-10 col-md-11' name="message" placeholder="Your Answer" required onChange={({ target }) => setMessage(target.value)}
+                        <input type="text"  className='col-9 col-sm-10 col-md-11' name="message" placeholder="Votre Réponse" required onChange={({ target }) => setMessage(target.value)}
                             value={message}></input>
                     </div>
 
@@ -370,5 +370,5 @@ const FosterApplication = () => {
 }
 
 export default FosterApplication
-export const Head = () => <title>Foster Application</title>
+export const Head = () => <title>Damille D'Accueil Application</title>
 

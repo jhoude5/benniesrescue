@@ -11,12 +11,12 @@ const Donate = () => {
       <Header />
       <div className="container">
         <div className="row center">
-            <h1>Donations</h1>
-            <p>To donate, send us an e-transfer to:</p>
+            <h1>Dons</h1>
+            <p>Pour faire un don, envoyez-nous un virement électronique à :</p>
             
                 <p><strong>benniesrescue@gmail.com</strong></p>
 
-            <p>You can also donate any cat food and treats to:</p>
+            <p>Vous pouvez également faire don de nourriture et de friandises pour chats à :</p>
             <p><strong>160 Chemin de Harrington<br></br>
             Harrington, QC<br></br>
             J8G 2S8</strong></p>
@@ -30,5 +30,5 @@ const Donate = () => {
 }
 
 export default Donate
-export const Head = () => <title>Donate</title>
+export const Head = () => <title>Dons</title>
 

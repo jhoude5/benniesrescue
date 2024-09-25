@@ -11,45 +11,45 @@ const BecomeFosters = () => {
       <Header />
       <div className="fostering container">
         <div className="row">
-            <h1>How to Become a Foster</h1>
-            <p>Becoming a foster parent is a significant and rewarding commitment. Here are the general steps and considerations involved in the process:</p>
+            <h1>Comment devenir famille d'accueil</h1>
+            <p>Devenir famille d'accueil est un engagement important et gratifiant. Voici les étapes générales et les considérations impliquées dans le processus :</p>
 
-            <p><strong>Steps to Become a Foster Parent</strong></p>
+            <p><strong>Étapes pour devenir parent d'accueil</strong></p>
 
             <ol>
-                <li>Research and Information Gathering:
+                <li>Recherche et collecte d'informations :
                     <ul>
-                        <li>Understand what fostering entails, including the responsibilities and challenges.</li>
+                        <li>Comprendre ce qu’implique le parrainage, y compris les responsabilités et les défis.</li>
                 
                     </ul>
                 </li>
-                <li>Eligibility Requirements:
+                <li>Conditions d'admissibilité :
                     <ul>
-                        <li>Ensure you meet the basic requirements, which may include being at least 18 years old.</li>
+                        <li>Assurez-vous de répondre aux exigences de base, ce qui peut inclure le fait d’avoir au moins 18 ans.</li>
             
                     </ul>
                 </li>
-                <li>Application Process:
+                <li>Processus de candidature :
                     <ul>
-                        <li>Complete an application form provided by Bennie's Rescue.</li>
-                        <li>Provide necessary documentation, identification, and references.</li>
+                        <li>Remplissez un formulaire de demande fourni par Sauvetage Bennie's.</li>
+                        <li>Fournir la documentation, l’identification et les références nécessaires.</li>
                     </ul>
                 </li>
-                <li>Approval:
+                <li>Approbation:
                     <ul>
-                        <li>If you meet all requirements, you will receive approval.</li>
-                        <li>The application process ensures that you are prepared and equipped to care for fostering kittens/cats.</li>
+                        <li>Si vous remplissez toutes les conditions, vous recevrez l’approbation.</li>
+                        <li>Le processus de candidature garantit que vous êtes préparé et équipé pour prendre soin de chatons/chats en famille d'accueil.</li>
                     </ul>
                 </li>
         
             </ol>
         
-            <p><strong>Considerations</strong></p>
+            <p><strong>Considérations</strong></p>
 
             <ul>
-                <li>Emotional Readiness: Foster parenting can be emotionally demanding. It's important to be mentally and emotionally prepared for the ups and downs.</li>
-                <li>Support System: Have a strong support network of family, friends, or support groups to help you through the fostering process.</li>
-                <li>Flexibility and Patience: Foster children may have experienced trauma and need time to adjust. Patience and flexibility are crucial.</li>
+                <li>Préparation émotionnelle : Le rôle de parent d'accueil peut être exigeant sur le plan émotionnel. Il est important d'être mentalement et émotionnellement préparé aux hauts et aux bas.</li>
+                <li>Système de soutien : Bénéficiez d'un solide réseau de soutien composé de membres de votre famille, d'amis ou de groupes de soutien pour vous aider tout au long du processus de placement familial..</li>
+                <li>Flexibilité et patience : les enfants placés en famille d'accueil peuvent avoir vécu des traumatismes et avoir besoin de temps pour s'adapter. La patience et la flexibilité sont essentielles.</li>
         
             </ul>
         
@@ -65,4 +65,4 @@ const BecomeFosters = () => {
 
 export default BecomeFosters
 
-export const Head = () => <title>Become a Foster</title>
+export const Head = () => <title>Comment devenir famille d'accueil</title>

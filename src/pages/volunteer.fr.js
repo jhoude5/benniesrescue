@@ -28,5 +28,5 @@ const Volunteer = () => {
 }
 
 export default Volunteer
-export const Head = () => <title>Volunteering</title>
+export const Head = () => <title>Volontariat</title>
 

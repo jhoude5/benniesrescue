@@ -69,4 +69,4 @@ export const query = graphql`
 
 export default SuccessStories
 
-export const Head = () => <title>Success Stories</title>
+export const Head = () => <title>Réussites</title>

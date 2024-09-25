@@ -1,5 +1,4 @@
 import * as React from "react";
-import { graphql, useStaticQuery } from 'gatsby';
 import Header from '../components/header';
 import '../sass/styles.scss';
 import headerimg from '../files/headerimg.png';

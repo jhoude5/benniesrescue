@@ -2,7 +2,6 @@ import React from "react";
 import { graphql, useStaticQuery } from 'gatsby';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import rightarrow from '../files/rightarrow.png';
-import imageUrl from '../files/paws.jpg';
 
 const Adoptions = () => {
     const data = useStaticQuery(graphql`
@@ -22,9 +21,7 @@ const Adoptions = () => {
 }
   `)
   const adoptions = data.allContentfulAdoptions.nodes;
-  const divStyles = {
-    backgroundImage: `url(${imageUrl})`,
-  }
+  
     return (
 
         <div className="container">
@@ -47,7 +44,7 @@ const Adoptions = () => {
                   );
                 })
               }
-                <div><a className='view-adoptions' href='/adoptions'>View full cat-a-logue
+                <div><a className='view-adoptions' href='/en/adoptions'>View full cat-a-logue
                     <img src={rightarrow} alt="" />
                 </a></div>
             </div>

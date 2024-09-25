@@ -15,7 +15,7 @@ const Fosters = ({data, pageContext }) => {
       <Header />
       <div className="fosters container">
         <div className="row">
-            <h1>Fosters</h1>
+            <h1>Famille D'Accueil</h1>
             {data.allContentfulFosters.nodes.map((item, index)  => {
                   return (
                       <div className="teaser-grid--wrapper col-lg-6" key={index}>
@@ -58,5 +58,5 @@ export const query = graphql`
   }
   `
 export default Fosters
-export const Head = () => <title>Fosters</title>
+export const Head = () => <title>Famille D'Accueil</title>
 

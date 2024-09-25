@@ -134,7 +134,7 @@ const FosterApplication = () => {
                     </div>
                     <div className=" form-group">
                         <div className='radio-option'>Do you own or rent your home? <span className='required'>*</span></div>
-                        <label for="homerent" className='radio-label'>Ren<input id="homerent" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
+                        <label for="homerent" className='radio-label'>Rent<input id="homerent" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
                           type="radio" required name="home" value={home} minLength="3" /></label>
                           <label for="homeown" className='radio-label'>Own<input id="homeown" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
                           type="radio" required name="home" value={home} minLength="3" /></label>
@@ -283,7 +283,7 @@ const FosterApplication = () => {
                           type="radio" required name="crating" value={crating} minLength="3" /></label>
                     </div>
                     <div className=" form-group">
-                        <div className='radio-option'>Are you willing and able to socialize and train the animal and advise PRUR of any socialization or behavioral issues?<span className='required'>*</span></div>
+                        <div className='radio-option'>Are you willing and able to socialize and train the animal and advise Bennie's Rescue of any socialization or behavioral issues?<span className='required'>*</span></div>
                         <div>(This may include litter training, accustomizing the animal to human interaction, etc.)</div>
                         <label className='radio-label' for="socialyes">Yes<input id="socialyes" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
                           type="radio" required name="socialize" value={socialize} minLength="3" /></label>
@@ -308,7 +308,7 @@ const FosterApplication = () => {
                     </div>
                     <div className=" form-group">
                         <div className='radio-option'>Are you willing and able to weigh the animal using a scale such as a kitchen scale) if requested by Bennie's Rescue?<span className='required'>*</span></div>
-                        <div> If fostering kittens, the fosterer must weigh the kittens using a small animal or kitchen scale and must record each kitten’s weight on a daily basis for the first 4 weeks of life, and then on a weekly basis thereafter. The fosterer must provide weights for all kittens or cats in their care to PRUR upon request.</div>
+                        <div> If fostering kittens, the fosterer must weigh the kittens using a small animal or kitchen scale and must record each kitten’s weight on a daily basis for the first 4 weeks of life, and then on a weekly basis thereafter. The fosterer must provide weights for all kittens or cats in their care to Bennie's Rescue upon request.</div>
                         <label className='radio-label' for="scaleyes">Yes<input id="scaleyes" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
                           type="radio" required name="scale" value={scale} minLength="3" /></label>
                           <label className='radio-label' for="scaleno">No<input id="scaleno" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}

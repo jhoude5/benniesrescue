@@ -55,7 +55,7 @@ const SucessStories = () => {
                   );
                 })
               }
-              <div className="see-more-link"><a href='/successstories'>
+              <div className="see-more-link"><a href='/en/successstories'>
                 See all stories <img src={rightarrow} alt="" /></a></div>
             </div>
         </div>

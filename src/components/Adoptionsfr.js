@@ -1,7 +1,6 @@
 import React from "react";
 import { graphql, useStaticQuery } from 'gatsby';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
-import { INLINES, BLOCKS, MARKS } from '@contentful/rich-text-types';
 import rightarrow from '../files/rightarrow.png'
 
 const Adoptions = () => {
@@ -22,23 +21,7 @@ const Adoptions = () => {
       }
   `)
   const adoptions = data.allContentfulAdoptions.nodes;
-    const options = {
     
-        renderMark: {
-          [MARKS.BOLD]: (text) => <b className="font-bold">{text}</b>,
-        },
-        renderNode: {
-          [BLOCKS.PARAGRAPH]: (node, children) => <p>{children}</p>,
-          [INLINES.HYPERLINK]: (node, children) => {
-            const { uri } = node.data
-            return (
-              <a href={uri} className="underline">
-                {children}
-              </a>
-            )
-          },
-        }
-    }
     return (
 
         <div className="container">
@@ -61,10 +44,9 @@ const Adoptions = () => {
                   );
                 })
               }
-            
-                <a href='/adoptions'>Voir le catalogue complet
+            <div><a className='view-adoptions' href='/fr/adoptions'>Voir le catalogue complet
                     <img src={rightarrow} alt="" />
-                </a>
+                </a></div>
             </div>
         </div>
     );

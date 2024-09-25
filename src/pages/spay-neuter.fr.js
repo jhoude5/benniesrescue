@@ -11,8 +11,8 @@ const SpayNeuter = () => {
       <Header />
       <div className="container">
         <div className="row">
-            <h1>Low cost Spay/Neuter</h1>
-            <p>If you have a male or female cat that needs to be spayed/neutered and you can’t afford the vet prices, give a call or email, and we will give you a better rate.</p>
+            <h1>Stérilisation à faible coût</h1>
+            <p>Si vous avez un chat mâle ou femelle qui a besoin d'être stérilisé et que vous ne pouvez pas vous permettre les prix du vétérinaire, appelez-nous ou envoyez-nous un e-mail et nous vous proposerons un meilleur tarif.</p>
             <p className="center"><a href='mailto:benniesrescue@gmail.com'>benniesrescue@gmail.com</a></p>
             <p className="center"><a href='tel:613-306-2134'>613-306-2134</a></p>
         </div>
@@ -24,4 +24,4 @@ const SpayNeuter = () => {
 }
 
 export default SpayNeuter
-export const Head = () => <title>Low Cost Spay/Neuter</title>
+export const Head = () => <title>Stérilisation à faible coût</title>

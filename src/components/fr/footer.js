@@ -20,7 +20,7 @@ const Footer = () => {
                         </li>
                         <li><a href='/fr/adoptions'>Adoption</a>
                             <ul>
-                                <li><a href='/fr/adopt-application'>Application</a></li>
+                                <li><a href='/fr/adoption-application'>Application</a></li>
                             </ul>
                         </li>
                         <li><a href='/fr/fosters'>Famille D’accueil</a>

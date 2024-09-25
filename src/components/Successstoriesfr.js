@@ -56,8 +56,9 @@ const SuccessStories = () => {
                   );
                 })
               }
-              <a href='/fr/foster'>
-                See all stories <img src={rightarrow} alt="" /></a>
+                <div className="see-more-link"><a href='/fr/foster'>
+                Voir toutes les histoires <img src={rightarrow} alt="" /></a>
+                </div>
             </div>
         </div>
     );
