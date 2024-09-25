@@ -1,4 +1,5 @@
 import * as React from "react";
+import { graphql, useStaticQuery } from 'gatsby';
 import Header from '../components/header';
 import '../sass/styles.scss';
 import headerimg from '../files/headerimg.png';
@@ -8,8 +9,8 @@ import spayneuter from '../files/spay-neuter.png';
 import Foster from "../components/foster";
 import Volunteer from "../components/volunteer";
 import Footer from "../components/footer";
-import Adoptions from "../components/adoptions";
-import SuccessStories from "../components/sucessstories";
+import Adoptions from "../components/Adoptions";
+import SuccessStories from "../components/Successstories";
 import mainstreet from '../files/mainstreet.jpeg';
 import houseofcommons from '../files/houseofcommons.png';
 import harrington from '../files/harrington.png';
@@ -20,6 +21,7 @@ import arundel from '../files/arundel.png';
 import imageUrl from '../files/paws.jpg';
 
 const IndexPage = () => {
+ 
   const divStyles = {
     backgroundImage: `url(${imageUrl})`,
   }

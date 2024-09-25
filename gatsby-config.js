@@ -25,16 +25,6 @@ module.exports = {
     }
   },
   {
-    resolve: `gatsby-plugin-intl`,
-    options: {
-      // language JSON resource path
-      path: `${__dirname}/src/intl`,
-      languages: [`en`, `fr`],
-      defaultLanguage: `en`,
-      redirect: true,
-    },
-  },
-  {
     resolve: `gatsby-plugin-google-fonts`,
     options: {
       fonts: [
@@ -68,7 +58,7 @@ module.exports = {
     options: {
       langKeyForNull: 'en',
       useLangKeyLayout: false,
-      prefixDefault: false,
+      prefixDefault: true,
     },
   },]
 };

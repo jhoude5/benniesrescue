@@ -3,12 +3,11 @@ import { graphql, useStaticQuery } from 'gatsby';
 import { renderRichText } from 'gatsby-source-contentful/rich-text';
 import { INLINES, BLOCKS, MARKS } from '@contentful/rich-text-types';
 import rightarrow from '../files/rightarrow.png';
-import imageUrl from '../files/pawprints.png';
 
-const SucessStories = () => {
+const SuccessStories = () => {
     const data = useStaticQuery(graphql`
-  query SuccessStoryQuery {
-    allContentfulSuccessStories(limit: 2, filter: {node_locale: {eq: "en-US"}}) {
+  query {
+    allContentfulSuccessStories(limit: 2, filter: {node_locale: {eq: "fr"}}) {
         nodes {
           name
           story {
@@ -37,20 +36,19 @@ const SucessStories = () => {
   }
 }
   const stories = data.allContentfulSuccessStories.nodes;
-  const divStyles = {
-    backgroundImage: `url(${imageUrl})`,
-  }
+   
     return (
 
         <div className="container">
             <div className="row">
-                <h2>Success Stories</h2>
+                <h2>Histoires de réussite</h2>
                 {stories.map((item, index)  => {
                   return (
+                    
                       <div className="story-wrapper" id={index}>
                         <div className="story-teaser">
                             <div className="story">{renderRichText(item.story, options)}</div>
-                            <div className="title"><p>{item.name}</p></div>
+                            <div className="title">{item.name}</div>
                                 
                         </div>
                       </div>
@@ -58,11 +56,11 @@ const SucessStories = () => {
                   );
                 })
               }
-              <div className="see-more-link"><a href='/successstories'>
-                See all stories <img src={rightarrow} alt="" /></a></div>
+              <a href='/fr/foster'>
+                See all stories <img src={rightarrow} alt="" /></a>
             </div>
         </div>
     );
 };
 
-export default SucessStories;
+export default SuccessStories;

@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from 'react'; 
 import Header from '../components/fr/header';
 import '../sass/styles.scss';
 import headerimg from '../files/headerimg.png';
@@ -8,8 +8,8 @@ import spayneuter from '../files/spay-neuter.png';
 import Foster from "../components/fr/foster";
 import Volunteer from "../components/fr/volunteer";
 import Footer from "../components/fr/footer";
-import Adoptions from "../components/fr/adoptions";
-import SuccessStories from "../components/fr/sucessstories";
+import Adoptions from "../components/Adoptionsfr";
+import SuccessStories from "../components/Successstoriesfr";
 import mainstreet from '../files/mainstreet.jpeg';
 import houseofcommons from '../files/houseofcommons.png';
 import harrington from '../files/harrington.png';
@@ -110,6 +110,8 @@ const IndexPage = () => {
   )
 }
 
+
 export default IndexPage
+
 
 export const Head = () => <title>Home Page</title>

@@ -6,7 +6,6 @@ header {
         text-decoration: none;
         margin-right: 15px;
         margin-top: 22px;
-        // margin-bottom: -20px;
         &:hover,
         &:focus {
             color: $blue;
@@ -42,6 +41,7 @@ header {
     h1.header-title {
         font-family: Risque;
         padding-top: 0;
+        font-size: 100px;
     }
     .header-img {
         display: flex;

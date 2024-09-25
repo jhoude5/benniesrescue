@@ -14,10 +14,10 @@ const MainMenu = (n) => {
         <div className="collapse navbar-collapse nav-menu">
             <ul className='navbar-nav'>
             
-                <li className='nav-item'><Link className='nav-link' to='/about' partiallyActive={true} activeClassName="active">About</Link></li>
-                <li className='nav-item'><Link className='nav-link' to='/adoptions/' activeClassName="active">Adoptions</Link></li>
-                <li className='nav-item'><Link className='nav-link' to='/fosters/' activeClassName="active">Fosters</Link></li>
-                <li className='nav-item'><Link className='nav-link' to='/contact/' activeClassName="active">Contact Us</Link></li>
+                <li className='nav-item'><Link className='nav-link' to='/en/about' partiallyActive={true} activeClassName="active">About</Link></li>
+                <li className='nav-item'><Link className='nav-link' to='/en/adoptions/' activeClassName="active">Adoptions</Link></li>
+                <li className='nav-item'><Link className='nav-link' to='/en/fosters/' activeClassName="active">Fosters</Link></li>
+                <li className='nav-item'><Link className='nav-link' to='/en/contact/' activeClassName="active">Contact Us</Link></li>
                 
             </ul>
             <a href='/donate' className='btn btn-primary btn-header'>Donate</a>

@@ -15,28 +15,24 @@ const Adoptions = ({data, pageContext}) => {
           <Header />
           <div className="container">
             <h1>Adoptions</h1>
-          
-          
-          {data.allContentfulAdoptions.nodes.map((item, index)  => {
-                  return (
-                    <a href={item.urlPath}>
-                      <div className="teaser-grid--wrapper col-lg-4" key={index}>
-                        <div className="teaser-grid">
-                            <div className="teaser-grid__name teaser__link card">
-                                <div className="teaser-grid__image">
-                                  <GatsbyImage image={getImage(item.image[0].gatsbyImageData)} aria-label={item.names} alt={''} />
+              {data.allContentfulAdoptions.nodes.map((item, index)  => {
+                      return (
+                        <a href={item.urlPath}>
+                          <div className="teaser-grid--wrapper col-lg-4" key={index}>
+                            <div className="teaser-grid">
+                                <div className="teaser-grid__name teaser__link card">
+                                    <div className="teaser-grid__image">
+                                      <GatsbyImage image={getImage(item.image[0].gatsbyImageData)} aria-label={item.names} alt={''} />
+                                    </div>
+                                    <div className="teaser-grid__title">Meet {item.names}</div>
                                 </div>
-                                <div className="teaser-grid__title">Meet {item.names}</div>
-                               
-                            
                             </div>
-                        </div>
-                      </div>
-                      </a>
+                          </div>
+                          </a>
 
-                  );
-                })
-              }
+                      );
+                    })
+                  }
           <Pagination pageContext={pageContext} />
           </div>
         </main>

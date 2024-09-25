@@ -1,30 +1,44 @@
 import React from "react";
 import { graphql, useStaticQuery } from 'gatsby';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
-import rightarrow from '../files/rightarrow.png';
-import imageUrl from '../files/paws.jpg';
+import { INLINES, BLOCKS, MARKS } from '@contentful/rich-text-types';
+import rightarrow from '../files/rightarrow.png'
 
 const Adoptions = () => {
     const data = useStaticQuery(graphql`
-  query {
-    allContentfulAdoptions(limit: 12, filter: {node_locale: {eq: "en-US"}}) {
-        nodes {
-          urlPath
-          names
-          image {
-            gatsbyImageData
+      query {
+        allContentfulAdoptions(limit: 12, filter: {node_locale: {eq: "fr"}}) {
+            nodes {
+              urlPath
+              names
+              image {
+                gatsbyImageData
+              }
+              description {
+                raw
+              }
+            }
           }
-          description {
-            raw
-          }
-        }
       }
-}
   `)
   const adoptions = data.allContentfulAdoptions.nodes;
-  const divStyles = {
-    backgroundImage: `url(${imageUrl})`,
-  }
+    const options = {
+    
+        renderMark: {
+          [MARKS.BOLD]: (text) => <b className="font-bold">{text}</b>,
+        },
+        renderNode: {
+          [BLOCKS.PARAGRAPH]: (node, children) => <p>{children}</p>,
+          [INLINES.HYPERLINK]: (node, children) => {
+            const { uri } = node.data
+            return (
+              <a href={uri} className="underline">
+                {children}
+              </a>
+            )
+          },
+        }
+    }
     return (
 
         <div className="container">
@@ -39,7 +53,7 @@ const Adoptions = () => {
                                 <div className="adoption__image">
                                   <GatsbyImage image={getImage(item.image[0].gatsbyImageData)} aria-label={item.adoptionTitle} alt={''} />
                                 </div>
-                                <div className="title">Meet {item.names}</div>
+                                <div className="title">Rencontrer {item.names}</div>
                                 
                         </div>
                       </div>
@@ -47,9 +61,10 @@ const Adoptions = () => {
                   );
                 })
               }
-                <div><a className='view-adoptions' href='/adoptions'>View full cat-a-logue
+            
+                <a href='/adoptions'>Voir le catalogue complet
                     <img src={rightarrow} alt="" />
-                </a></div>
+                </a>
             </div>
         </div>
     );

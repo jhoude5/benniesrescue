@@ -9,8 +9,6 @@ import Pagination from "../components/pagination.js";
 
 
 const Adoptions = ({data, pageContext}) => {
-    console.log(data);
-    
 
   return (
     <div> 
@@ -18,29 +16,24 @@ const Adoptions = ({data, pageContext}) => {
           <Header />
           <div className="container">
             <h1>Adoptions</h1>
-          </div>
-          
-          {data.allContentfulAdoptions.nodes.map((item, index)  => {
-                  return (
-                    <a href={item.urlPath}>
-                      <div className="teaser-grid--wrapper col-lg-4">
-                        <div className="teaser-grid">
-                            <div className="teaser-grid__name teaser__link">
-                            
-                                <div className="teaser-grid__image">
-                                  <GatsbyImage image={getImage(item.image[0].gatsbyImageData)} aria-label={item.name} alt={''} />
+              {data.allContentfulAdoptions.nodes.map((item, index)  => {
+                      return (
+                        <a href={item.urlPath}>
+                          <div className="teaser-grid--wrapper col-lg-4">
+                            <div className="teaser-grid">
+                                <div className="teaser-grid__name teaser__link">
+                                    <div className="teaser-grid__image">
+                                      <GatsbyImage image={getImage(item.image[0].gatsbyImageData)} aria-label={item.name} alt={''} />
+                                    </div>
+                                    <div className="teaser-grid__title">Rencontrer {item.names}</div>
                                 </div>
-                                <div className="teaser-grid__title">Rencontrer {item.names}</div>
-                                
-                                
-                            
                             </div>
-                        </div>
-                      </div>
-                      </a>
-                  );
-                })
-              }
+                          </div>
+                          </a>
+                      );
+                    })
+                  }
+            </div>
           <Pagination pageContext={pageContext} />
           
         </main>
