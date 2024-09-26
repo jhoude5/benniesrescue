@@ -10,6 +10,7 @@ exports.createPages = async ({ graphql, actions }) => {
             edges {
                 node {
                     urlPath
+                    names
                 }    
             }
         }
@@ -17,6 +18,7 @@ exports.createPages = async ({ graphql, actions }) => {
             edges {
                 node {
                     urlPath
+                    names
                 }    
             }
         }
@@ -30,7 +32,7 @@ exports.createPages = async ({ graphql, actions }) => {
     result.data.adoptionsen.edges.forEach(( node , index) => {
 
         createPage({
-          path: `/adoptions/${node.node.urlPath}`,
+          path: `/en/adoptions/${node.node.names}`,
           component: EnAdoptionsTemplate,
           // values in the context object are passed in as variables to page queries
           context: {
@@ -44,7 +46,7 @@ exports.createPages = async ({ graphql, actions }) => {
             createPage,
             items: enadoptionData,
             itemsPerPage: 12,
-            pathPrefix: '/adoptions',
+            pathPrefix: '/en/adoptions',
             component: path.resolve('src/templates/adoptions.js')
         })
 
@@ -53,7 +55,7 @@ exports.createPages = async ({ graphql, actions }) => {
         fradoptionData.forEach(( node , index) => {
     
             actions.createPage({
-              path: `/fr/adoptions/${node.node.urlPath}`,
+              path: `/fr/adoptions/${node.node.names}`,
               component: FrAdoptionsTemplate,
               // values in the context object are passed in as variables to page queries
               context: {
@@ -67,7 +69,7 @@ exports.createPages = async ({ graphql, actions }) => {
                 createPage,
                 items: fradoptionData,
                 itemsPerPage: 12,
-                pathPrefix: '/adoptions',
+                pathPrefix: '/fr/adoptions',
                 component: path.resolve('src/templates/fr/adoptions.js')
             })
 }

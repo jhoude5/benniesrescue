@@ -94,7 +94,7 @@ const FosterApplication = () => {
       <Header />
       <div className="container">
             <h1>Foster Application</h1>
-            <form className='foster-application-form' name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field"
+            <form className='foster-application-form' name="foster-application" method="post" data-netlify="true" data-netlify-honeypot="bot-field"
               onSubmit={handleSubmit} id="contact-form">
                 <input type="hidden" name="form-name" value="contact" />
                 <input type="hidden" name="bot-field" />

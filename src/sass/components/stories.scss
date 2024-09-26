@@ -1,11 +1,18 @@
 .success {
     h2 {
-        margin-bottom: 77px;
+        margin-bottom: 45px;
+        @media(min-width: 1024px) {
+            margin-bottom: 77px;
+        }
+        
     }
     .story-wrapper {
         background-color: $light-pink;
         margin-bottom: 55px;
-        padding: 50px;
+        padding: 30px;
+        @media(min-width: 1024px) {
+            padding: 50px;
+        }
         .title {
             float: right;
             font-weight: bold;
@@ -19,7 +26,7 @@
         font-weight: bold;
         margin-right: 5px;
         font-size: 22px;
-        @media(min-width: 768px) {
+        @media(min-width: 1024px) {
             font-size: 28px;
             margin-top: 114px;
         }

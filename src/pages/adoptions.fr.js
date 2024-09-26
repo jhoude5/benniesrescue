@@ -14,20 +14,20 @@ const Adoptions = ({data, pageContext}) => {
     <div> 
         <main>
           <Header />
-          <div className="container">
+          <div className="container adoptions">
             <h1>Adoptions</h1>
               {data.allContentfulAdoptions.nodes.map((item, index)  => {
                       return (
-                        <a href={item.urlPath}>
-                          <div className="teaser-grid--wrapper col-lg-4">
-                            <div className="teaser-grid">
-                                <div className="teaser-grid__name teaser__link">
-                                    <div className="teaser-grid__image">
+                        <a className="adoptions--wrapper" href={`/fr/adoptions/${item.names}`}>
+                          
+                            <div className="adoption card col-md-4">
+                                <div className="adoption-teaser">
+                                    <div className="adoption__image">
                                       <GatsbyImage image={getImage(item.image[0].gatsbyImageData)} aria-label={item.name} alt={''} />
                                     </div>
-                                    <div className="teaser-grid__title">Rencontrer {item.names}</div>
+                                    <div className="title">Rencontrer {item.names}</div>
                                 </div>
-                            </div>
+                            
                           </div>
                           </a>
                       );

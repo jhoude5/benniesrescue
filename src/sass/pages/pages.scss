@@ -5,8 +5,12 @@
 @import 'volunteer';
 @import 'boardmembers';
 @import 'contact';
+@import 'adoptions';
 
 h1 {
-    padding-top: 130px;
+    padding-top: 50px;
     margin-bottom: 40px;
+    @media(min-width: 1024px) {
+        padding-top: 130px;
+    }
 }

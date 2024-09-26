@@ -7,12 +7,13 @@ import { Link } from "gatsby";
 
 
 const Header = () => {
-
+    
     return (
 
         <header>
             <div className="container">
                 <Link className='language-switcher' to='/en'>English</Link>
+                
             </div>
             
             <div className='header container'><div className='inner'>

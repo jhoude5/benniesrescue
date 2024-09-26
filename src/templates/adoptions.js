@@ -5,6 +5,7 @@ import Footer from '../components/footer.js';
 import { renderRichText } from 'gatsby-source-contentful/rich-text';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import { INLINES, BLOCKS, MARKS } from '@contentful/rich-text-types';
+import Foster from '../components/foster.js';
 
 
 
@@ -39,14 +40,21 @@ const AdoptionsTemplate = ({data}) => {
     <div>
         <main>
         <Header />
-        <section className='adoptions-template'>
+        <div className='adoptions-template'>
             <div className='container'>
                 <h1>Meet { data.allContentfulAdoptions.edges[0].node.names }</h1>
-                <GatsbyImage image={getImage(data.allContentfulAdoptions.edges[0].node.image[0])} alt={''} />
+                {data.allContentfulAdoptions.edges[0].node.image.map((item, index)  => {
+                  return (
+                    <GatsbyImage className="col-lg-4" image={getImage(item)} alt={''} />
+                  );
+                  
+                })}
                 <div className="description">{renderRichText(data.allContentfulAdoptions.edges[0].node.description, options)}</div>
             </div>
-        </section>
-    
+        </div>
+        <section className='foster'>
+      <Foster />
+    </section>
         </main>
         <Footer />
     </div>

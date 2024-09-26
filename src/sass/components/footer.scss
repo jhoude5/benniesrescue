@@ -12,7 +12,7 @@ footer {
         }
     }
     .footer-logo {
-        max-width: 175px;
+        max-width: 125px;
         margin-bottom: 30px;
         @media(min-width: 1024px) {
             max-width: 229px;
@@ -124,9 +124,8 @@ footer {
                 justify-content: end;
                 margin-top: 0;
             }
-            
             p {
-                @media(min-width: 768px) {
+                @media(min-width: 767px) {
                     float: right;
                 }
                 

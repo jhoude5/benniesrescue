@@ -32,13 +32,14 @@ const SuccessStories = ({ data }) => {
   return (
     <main>
       <Header />
-      <div className="container">
+      <div className="container success">
+        <div className="row">
             <h1>Sucess Stories</h1>
             {data.allContentfulSuccessStories.nodes.map((item, index)  => {
                   return (
                     <a href={item.urlPath}>
-                      <div className="teaser-grid--wrapper col-lg-4" key={index}>
-                        <div className="teaser-grid">
+                      <div className="story-wrapper col-lg-4" key={index}>
+                        <div className="story-teaser">
                           <div className="story">{renderRichText(item.story, options)}</div>
                             <div className="title">{item.name}</div>
                         </div>
@@ -48,6 +49,7 @@ const SuccessStories = ({ data }) => {
                   );
                 })
               }
+              </div>
           </div>
           <Footer />
     </main>

@@ -13,21 +13,21 @@ const Adoptions = ({data, pageContext}) => {
     <div> 
         <main>
           <Header />
-          <div className="container">
+          <div className="container adoptions">
             <h1>Adoptions</h1>
               {data.allContentfulAdoptions.nodes.map((item, index)  => {
                       return (
-                        <a href={item.urlPath}>
-                          <div className="teaser-grid--wrapper col-lg-4" key={index}>
-                            <div className="teaser-grid">
-                                <div className="teaser-grid__name teaser__link card">
-                                    <div className="teaser-grid__image">
+                        <a className="adoptions--wrapper"href={item.urlPath}>
+                          
+                            <div className="adoption card col-md-4">
+                                <div className="adoption-teaser">
+                                    <div className="adoption__image">
                                       <GatsbyImage image={getImage(item.image[0].gatsbyImageData)} aria-label={item.names} alt={''} />
                                     </div>
-                                    <div className="teaser-grid__title">Meet {item.names}</div>
+                                    <div className="title">Meet {item.names}</div>
                                 </div>
                             </div>
-                          </div>
+                          
                           </a>
 
                       );

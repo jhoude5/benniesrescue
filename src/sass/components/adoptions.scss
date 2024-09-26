@@ -1,8 +1,9 @@
 .adoptions {
-    // background-image: url('../../files/pawprints.png');
-    background-repeat: none;
     h2 {
-        margin-bottom: 114px;
+        margin-bottom: 50px;
+        @media(min-width: 1024px) {
+            margin-bottom: 114px;
+        }
     }
     a.adoptions--wrapper {
         padding: 0;
@@ -27,8 +28,11 @@
                 padding: 10px;
                 text-align: center;
                 font-weight: bold;
-                font-size: 36px;
+                font-size: 22px;
                 color: $black;
+                @media(min-width: 1024px) {
+                    font-size: 36px;
+                }
                 
             }
         }
@@ -41,10 +45,11 @@
         font-weight: bold;
         font-size: 22px;
         @media(min-width: 768px) {
-            font-size: 28px;
             margin-top: 114px;
         }
-        
+        @media(min-width: 1024px) {
+            font-size: 28px;
+        }
         &:hover,
         &:focus {
             img {

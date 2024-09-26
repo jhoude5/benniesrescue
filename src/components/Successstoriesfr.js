@@ -39,7 +39,7 @@ const SuccessStories = () => {
    
     return (
 
-        <div className="container">
+        <div className="container success">
             <div className="row">
                 <h2>Histoires de réussite</h2>
                 {stories.map((item, index)  => {
@@ -56,7 +56,7 @@ const SuccessStories = () => {
                   );
                 })
               }
-                <div className="see-more-link"><a href='/fr/foster'>
+                <div className="see-more-link"><a href='/fr/successstories'>
                 Voir toutes les histoires <img src={rightarrow} alt="" /></a>
                 </div>
             </div>

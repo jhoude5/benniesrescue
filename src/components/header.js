@@ -13,6 +13,7 @@ const Header = () => {
         <header>
             <div className='header container'><div className='inner'>
             <div className="row">
+            
                     <Link className='language-switcher' to='/fr'>Français</Link>
                 </div>
                 <MainMenu />

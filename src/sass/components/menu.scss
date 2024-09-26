@@ -10,7 +10,7 @@
     width: 50px;
     height: 50px;
     position: absolute;
-    right: 0px;
+    right: -34px;
     top: 28px;
     
     @media(min-width: 992px) {
@@ -43,17 +43,33 @@
 }
 .bm-menu-wrap {
     background-color: white;
-    max-height: 264px;
     right: 58px;
     width: 100% !important;
-    position: relative !important;
-    
-    .bm-menu {
-        background-color: $grey;
+    top: 0;
+    padding: 20px;
+    .navbar-brand {
+        @media(min-width: 1024px) {
+            margin-left: 15px;
+        }
+    }
+    .bm-item {
+        margin-left: 0;
+        width: 181px; 
+        @media(min-width: 768px) {
+            // width: 25%; 
+            margin-left: 28px;
+        }
+
+    }
+    .language-switcher {
+        @media(min-width: 1024px) {
+            margin-left: 30px;
+        }
     }
     .mmenu--list {
         list-style: none;
         padding-top: 20px;
+        padding-left: 0;
         font-size: 20px;
         li {
             padding-top: 7px;
@@ -64,7 +80,8 @@
     }
 }
 .bm-cross-button {
-    // width: 31px !important;
-    // height: 31px !important;
-    // right: 44px !important;
+    width: 38px !important;
+    height: 38px !important;
+    right: 24px !important;
+    top: 20px !important;
 }
