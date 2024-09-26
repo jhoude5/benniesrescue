@@ -13,24 +13,24 @@ const MobileMenu = (props) => {
       <ul className="mmenu--list">
       
         <li className='mmenu--list__item'>
-          <Link to='/about'>About</Link>
+          <Link to='/en/about'>About</Link>
         </li>
         
         <li className='mmenu--list__item'>
-          <Link to='/adoptions'>Adoptions</Link>
+          <Link to='/en/adoptions'>Adoptions</Link>
         </li>
 
         <li className='mmenu--list__item'>
-          <Link to="/fosters">Fosters</Link>
+          <Link to="/en/fosters/">Fosters</Link>
         </li>
 
         <li className='mmenu--list__item'>
-          <Link to="/contact">Contact Us</Link>
+          <Link to="/en/contact/">Contact Us</Link>
         </li>
 
       </ul>
-      <a href='/donate' className='btn btn-primary btn-header'>Donate</a>
-      <Link className='language-switcher' to='/fr'>Français</Link>
+      <a href='/en/donate' className='btn btn-primary btn-header'>Donate</a>
+      <Link className='language-switcher' to='/fr/'>Français</Link>
     </Menu>
   );
 };
