@@ -2,6 +2,12 @@ const path = require("path");
 const { paginate } = require('gatsby-awesome-pagination');
 
 exports.createPages = async ({ graphql, actions }) => {
+  const { createRedirect } = actions;
+
+	createRedirect({
+    fromPath: `/`,
+    toPath: `/en`,
+  });
     const { createPage } = actions;
     const result = await graphql(
           
