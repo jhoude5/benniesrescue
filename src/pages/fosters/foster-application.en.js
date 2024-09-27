@@ -3,6 +3,7 @@ import Header from '../../components/header';
 import '../../sass/styles.scss';
 import Footer from '../../components/footer';
 import Volunteer from '../../components/volunteer';
+import { navigate } from 'gatsby';
 
 
 const FosterApplication = () => {
@@ -51,9 +52,7 @@ const FosterApplication = () => {
         body: new URLSearchParams(formData).toString(),
     })
         .then(() => {
-            document.querySelector('.success').innerText =
-                "Thank you for reaching out to us, we'd get back to you shortly.";
-                document.getElementById('success').scrollIntoView();
+            navigate("/en/thank-you/");
             // Clear form fields
             setName('');
             setEmail('');

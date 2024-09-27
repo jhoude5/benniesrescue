@@ -3,6 +3,7 @@ import Header from '../components/fr/header';
 import '../sass/styles.scss';
 import Footer from '../components/fr/footer';
 import Adopt from '../components/fr/adopt';
+import { navigate } from 'gatsby';
 
 
 const Contact = () => {
@@ -19,9 +20,7 @@ const Contact = () => {
         body: new URLSearchParams(formData).toString(),
     })
         .then(() => {
-            document.querySelector('.success').innerText =
-                "Merci de nous avoir contactés, nous vous répondrons sous peu.";
-                document.getElementById('success').scrollIntoView();
+            navigate("/fr/thank-you/");
             // Clear form fields
             setName('');
             setEmail('');

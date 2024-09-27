@@ -3,6 +3,7 @@ import Header from '../../components/fr/header';
 import '../../sass/styles.scss';
 import Footer from '../../components/fr/footer';
 import Volunteer from '../../components/fr/volunteer';
+import { navigate } from 'gatsby';
 
 
 const FosterApplication = () => {
@@ -39,8 +40,6 @@ const FosterApplication = () => {
   const [acknowledge, setAcknowledge] = useState("");
   const [transport, setTranport] = useState("");
   
-
-
   const handleSubmit = e => {
     e.preventDefault()
     const myForm = e.target;
@@ -51,9 +50,7 @@ const FosterApplication = () => {
         body: new URLSearchParams(formData).toString(),
     })
         .then(() => {
-            document.querySelector('.success').innerText =
-                "Merci de nous avoir contactés, nous vous répondrons sous peu.";
-                document.getElementById('success').scrollIntoView();
+            navigate("/fr/thank-you/");
             // Clear form fields
             setName('');
             setEmail('');
