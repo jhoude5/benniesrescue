@@ -91,7 +91,7 @@ const FosterApplication = () => {
 };
   return (
     <main>
-      <Header />
+      <Header page='/fr/fosters/adoption-application'/>
       <div className="container">
             <h1>Foster Application</h1>
             <form className='foster-application-form' name="foster-application" method="post" data-netlify="true" data-netlify-honeypot="bot-field"
@@ -360,8 +360,6 @@ const FosterApplication = () => {
                     </div>
                 </div>
             </form>
-            <div className="success" id='success'></div>
-            <div className="error"></div>
           </div>
           <section className='volunteers'>
             <Volunteer />

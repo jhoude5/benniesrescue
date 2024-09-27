@@ -1,5 +1,7 @@
 import * as React from "react"
 import { Link } from "gatsby"
+import Header from "../components/fr/header"
+import Footer from "../components/fr/footer"
 
 const pageStyles = {
   color: "#232129",
@@ -26,17 +28,19 @@ const codeStyles = {
 const NotFoundPage = () => {
   return (
     <main style={pageStyles}>
-      <h1 style={headingStyles}>Page not found</h1>
+      <Header />
+      <h1 style={headingStyles}>Page introuvable</h1>
       <p style={paragraphStyles}>
-        Sorry 😔, we couldn’t find what you were looking for.
+      Désolé 😔, nous n'avons pas trouvé ce que vous cherchiez.
         
         <br />
-        <Link to="/">Go home</Link>.
+        <Link to="/fr">aller à la page d'accueil</Link>.
       </p>
+      <Footer/>
     </main>
   )
 }
 
 export default NotFoundPage
 
-export const Head = () => <title>Not found</title>
+export const Head = () => <title>Page introuvable</title>

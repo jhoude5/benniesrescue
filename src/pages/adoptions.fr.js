@@ -1,6 +1,6 @@
 import * as React from "react"
 import { graphql } from 'gatsby';
-import Header from '../components/header.js';
+import Header from '../components/fr/header.js';
 import '../sass/styles.scss';
 import Footer from "../components/fr/footer";
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
@@ -13,7 +13,7 @@ const Adoptions = ({data, pageContext}) => {
   return (
     <div> 
         <main>
-          <Header />
+          <Header page='/en/adoptions'/>
           <div className="container adoptions">
             <h1>Adoptions</h1>
               {data.allContentfulAdoptions.nodes.map((item, index)  => {

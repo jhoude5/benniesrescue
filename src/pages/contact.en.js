@@ -20,9 +20,6 @@ const Contact = () => {
         body: new URLSearchParams(formData).toString(),
     })
         .then(() => {
-            // document.querySelector('.success').innerText =
-            //     "Thank you for reaching out to us, we will get back to you shortly.";
-            //     document.getElementById('success').scrollIntoView();
                 navigate("/en/thank-you/");
             // Clear form fields
             setName('');
@@ -33,7 +30,7 @@ const Contact = () => {
 };
   return (
     <main>
-      <Header />
+      <Header page='/fr/contact'/>
       <div className="container contact-us">
         <div className="row">
             <h1>Contact Us</h1>
@@ -66,8 +63,7 @@ const Contact = () => {
                     </div>
                 </div>
             </form>
-            <div className="success" id="success"></div>
-            <div className="error"></div>
+            
         </div>
       </div>
       <section className='adopt-cta'>

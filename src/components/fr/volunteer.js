@@ -8,7 +8,7 @@ const Volunteer = () => {
             <h2>Nous avons besoin de bénévoles</h2>
             <p>Vous cherchez une façon significative de faire une différence dans votre communauté?
 Rejoignez-nous et devenez bénévole!</p>
-            <a className='btn btn-primary' href='/fr/volunteer'>
+            <a className='btn btn-primary' href='/fr/about/volunteer'>
             Apprendre encore plus</a>
         </div>
     );

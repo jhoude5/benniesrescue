@@ -8,7 +8,7 @@ import Volunteer from "../../components/volunteer";
 const SpayNeuter = () => {
   return (
     <main>
-      <Header />
+      <Header page='/fr/about/spay-neuter'/>
       <div className="container">
         <div className="row">
             <h1>Low cost Spay/Neuter</h1>

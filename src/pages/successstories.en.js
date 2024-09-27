@@ -31,7 +31,7 @@ const SuccessStories = ({ data }) => {
 }
   return (
     <main>
-      <Header />
+      <Header page='/fr/successstories'/>
       <div className="container success">
         <div className="row">
             <h1>Sucess Stories</h1>

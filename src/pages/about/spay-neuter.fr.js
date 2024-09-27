@@ -1,14 +1,14 @@
 import * as React from "react";
-import Header from '../../components/header';
+import Header from '../../components/fr/header';
 import '../../sass/styles.scss';
-import Footer from "../../components/footer";
-import Volunteer from "../../components/volunteer";
+import Footer from "../../components/fr/footer";
+import Volunteer from "../../components/fr/volunteer";
 
 
 const SpayNeuter = () => {
   return (
     <main>
-      <Header />
+      <Header page='/en/about/spay-neuter'/>
       <div className="container">
         <div className="row">
             <h1>Stérilisation à faible coût</h1>

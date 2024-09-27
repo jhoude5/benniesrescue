@@ -1,7 +1,7 @@
 
 import * as React from "react";
 import { graphql } from "gatsby";
-import Header from '../components/header';
+import Header from '../components/fr/header';
 import '../sass/styles.scss';
 import { INLINES, BLOCKS, MARKS } from '@contentful/rich-text-types';
 import { renderRichText } from 'gatsby-source-contentful/rich-text';
@@ -31,7 +31,7 @@ const SuccessStories = ({ data }) => {
 }
   return (
     <main>
-      <Header />
+      <Header page='/en/successstories'/>
       <div className="container success">
         <div className="row">
             <h1>Réussites</h1>

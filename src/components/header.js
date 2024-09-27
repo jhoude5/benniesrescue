@@ -5,16 +5,14 @@ import MainMenu from './menu/mainmenu'
 import MobileMenu from './menu/mobilemenu';
 import { Link } from "gatsby";
 
-
-const Header = () => {
+const Header = ({ page }) => {
 
     return (
 
         <header>
             <div className='header container'><div className='inner'>
-            <div className="row">
-            
-                    <Link className='language-switcher' to='/fr'>Français</Link>
+                <div className="row">
+                    <Link className='language-switcher' to={page}>Français</Link>
                 </div>
                 <MainMenu />
                 <MobileMenu

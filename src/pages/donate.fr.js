@@ -1,14 +1,14 @@
 import * as React from "react";
-import Header from '../components/header';
+import Header from '../components/fr/header';
 import '../sass/styles.scss';
-import Footer from "../components/footer";
-import Foster from "../components/foster";
+import Footer from "../components/fr/footer";
+import Foster from "../components/fr/foster";
 
 
 const Donate = () => {
   return (
     <main>
-      <Header />
+      <Header page='/en/donate'/>
       <div className="container">
         <div className="row center">
             <h1>Dons</h1>

@@ -10,7 +10,7 @@ import imgGeorge from '../../files/george.jpg';
 const BoardMembers = () => {
   return (
     <main>
-      <Header />
+      <Header page='/fr/about/board-members'/>
       <div className="board-members container">
         <div className="row">
             <h1>Board Members</h1>

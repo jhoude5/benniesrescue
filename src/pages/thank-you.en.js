@@ -7,7 +7,7 @@ import Volunteer from "../components/volunteer";
 const Thankyou = () => {
   return (
     <main>
-        <Header />
+        <Header page='/fr/thank-you'/>
         <div className="container thank-you">
             <h1>Thank You for reaching out to us</h1>
             <p>We will get back to you shortly.</p>

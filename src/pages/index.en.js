@@ -26,7 +26,7 @@ const IndexPage = () => {
   }
   return (
     <main>
-      <Header />
+      <Header page='/fr/'/>
       <section>
         <div className="container">
           <div className="row">

@@ -1,14 +1,14 @@
 import * as React from "react";
-import Header from '../../components/header';
-import Footer from '../../components/footer';
+import Header from '../../components/fr/header';
+import Footer from '../../components/fr/footer';
 import '../../sass/styles.scss';
-import Foster from "../../components/foster";
+import Foster from "../../components/fr/foster";
 
 
 const Volunteer = () => {
   return (
     <main>
-      <Header />
+      <Header page='/en/about/volunteer'/>
       <div className="container">
         <div className="row">
             <h1>Volontariat</h1>

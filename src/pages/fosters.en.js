@@ -12,7 +12,7 @@ const Fosters = ({data, pageContext }) => {
   console.log(data.allContentfulFosters.nodes);
   return (
     <main>
-      <Header />
+      <Header page='/fr/fosters'/>
       <div className="fosters container">
         <div className="row">
             <h1>Fosters</h1>

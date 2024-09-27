@@ -8,7 +8,7 @@ import Adopt from "../../components/adopt";
 const BecomeFosters = () => {
   return (
     <main>
-      <Header />
+      <Header page='/fr/fosters/become-a-foster'/>
       <div className="fostering container">
         <div className="row">
             <h1>How to Become a Foster</h1>

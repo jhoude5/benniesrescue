@@ -8,7 +8,7 @@ import Foster from "../components/foster";
 const Donate = () => {
   return (
     <main>
-      <Header />
+      <Header page='/fr/donate'/>
       <div className="container donations">
         <div className="row center">
             <h1>Donations</h1>

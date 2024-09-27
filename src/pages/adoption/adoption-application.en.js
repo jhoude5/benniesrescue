@@ -71,7 +71,7 @@ const AdoptionApplication = () => {
 };
   return (
     <main>
-      <Header />
+      <Header page='/fr/adoption/adoption-application'/>
       <div className="container">
             <h1>Adoption Application</h1>
             <form className='adoption-application-form' name="adoption-application" method="post" data-netlify="true" data-netlify-honeypot="bot-field"
@@ -219,8 +219,6 @@ const AdoptionApplication = () => {
                     </div>
                 </div>
             </form>
-            <div className="success" id="success"></div>
-            <div className="error"></div>
           </div>
           <section className='volunteers'>
             <Volunteer />

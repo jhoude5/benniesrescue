@@ -11,7 +11,7 @@ import rightarrow from '../files/rightarrow.png';
 const About = () => {
   return (
     <main>
-      <Header />
+      <Header page='/en/about'/>
       <div className="aboutus container">
         <div className="row">
           <h1>À propos de nous</h1>

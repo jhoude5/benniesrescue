@@ -30,10 +30,9 @@ const Contact = () => {
 };
   return (
     <main>
-      <Header />
+      <Header page='/en/contact'/>
       <div className="container">
         <div className="row">
-          <div className="col-md-6">
             <h1>Contactez-nous</h1>
             <form className='contact-us-form' name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field"
               onSubmit={handleSubmit} id="contact-form">
@@ -41,21 +40,21 @@ const Contact = () => {
                 <input type="hidden" name="bot-field" />
                 <div className="row clearfix">
                     <div className=" form-group">
-                        <label className='col-3 col-sm-2 col-md-1'>Nom <span className='required'>*</span>
-                        <input  className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
+                        <label for='name'>Nom <span className='required'>*</span>
+                        <input id='name' onChange={({ target }) => setName(target.value)}
                           type="text" required name="name" value={name} minLength="3" placeholder="Votre nom complet" /></label>
                     </div>
 
                     <div className="form-group">
-                        <label className='col-3 col-sm-2 col-md-1'>Email <span className='required'>*</span>
-                        <input className='col-9 col-sm-10 col-md-11' type="email"
+                        <label for='email'>Email <span className='required'>*</span>
+                        <input id='email' type="email"
                             name="email" value={email} required
                             onChange={({ target }) => setEmail(target.value)} placeholder="Votre Email" /></label>
                     </div>
 
                     <div className="form-group">
-                        <label className='col-3 col-sm-2 col-md-1'>Message <span className='required'>*</span>
-                        <textarea  className='col-9 col-sm-10 col-md-11' name="message" placeholder="Message" required onChange={({ target }) => setMessage(target.value)}
+                        <label for='message'>Message <span className='required'>*</span>
+                        <textarea id='message' name="message" placeholder="Message" required onChange={({ target }) => setMessage(target.value)}
                             value={message}></textarea></label>
                     </div>
 
@@ -64,10 +63,8 @@ const Contact = () => {
                     </div>
                 </div>
             </form>
-            <div className="success" id="success"></div>
-            <div className="error"></div>
           </div>
-        </div>
+        
       </div>
       <section className='adopt-cta'>
         <Adopt />

@@ -12,7 +12,7 @@ const Adoptions = ({data, pageContext}) => {
   return (
     <div> 
         <main>
-          <Header />
+          <Header page='/fr/adoptions'/>
           <div className="container adoptions">
             <h1>Adoptions</h1>
               {data.allContentfulAdoptions.nodes.map((item, index)  => {

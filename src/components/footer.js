@@ -11,19 +11,19 @@ const Footer = () => {
                     <img className='footer-logo' src={logo} alt='logo' />
                     
                     <ul className="footer-menu">
-                        <li><a href='/about'>About</a>
+                        <li><a href='/en/about'>About</a>
                             <ul>
                                 <li><a href='/en/about/volunteer'>Volunteer</a></li>
                                 <li><a href='/en/about/board-members'>Board Members</a></li>
                                 <li><a href='/en/about/spay-neuter'>Low Cost Spay/Neuter</a></li>
                             </ul>
                         </li>
-                        <li><a href='/adoptions'>Adoption</a>
+                        <li><a href='/en/adoptions'>Adoption</a>
                             <ul>
                                 <li><a href='/en/adoption/adoption-application'>Application</a></li>
                             </ul>
                         </li>
-                        <li><a href='/fosters'>Fosters</a>
+                        <li><a href='/en/fosters'>Fosters</a>
                             <ul>
                                 <li><a href='/en/fosters/become-a-foster'>How to foster</a></li>
                                 <li><a href='/en/fosters/foster-application'>Application</a></li>

@@ -1,14 +1,14 @@
 import * as React from "react";
-import Header from '../../components/header';
-import Footer from '../../components/footer';
+import Header from '../../components/fr/header';
+import Footer from '../../components/fr/footer';
 import '../../sass/styles.scss';
-import Adopt from "../../components/adopt";
+import Adopt from "../../components/fr/adopt";
 
 
 const BecomeFosters = () => {
   return (
     <main>
-      <Header />
+      <Header page='/en/fosters/become-a-foster'/>
       <div className="fostering container">
         <div className="row">
             <h1>Comment devenir famille d'accueil</h1>

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Header from '../../components/fr/header';
 import '../../sass/styles.scss';
 import Footer from '../../components/fr/footer';
-import Volunteer from '../../components/volunteer';
+import Volunteer from '../../components/fr/volunteer';
 import { navigate } from 'gatsby';
 
 
@@ -71,7 +71,7 @@ const AdoptionApplication = () => {
 };
   return (
     <main>
-      <Header />
+      <Header page='/en/adoption/adoption-application'/>
       <div className="container">
             <h1>Demande D'Adoption</h1>
             <form className='adoption-application-form' name="adoption-applicatoin" method="post" data-netlify="true" data-netlify-honeypot="bot-field"
@@ -221,8 +221,6 @@ const AdoptionApplication = () => {
                     </div>
                 </div>
             </form>
-            <div className="success" id="success"></div>
-            <div className="error"></div>
           </div>
           <section className='volunteers'>
             <Volunteer />
