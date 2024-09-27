@@ -52,7 +52,8 @@ const FosterApplication = () => {
     })
         .then(() => {
             document.querySelector('.success').innerText =
-                "Thank you for reaching out to us, we'd get back to you shortly.";
+                "Merci de nous avoir contactés, nous vous répondrons sous peu.";
+                document.getElementById('success').scrollIntoView();
             // Clear form fields
             setName('');
             setEmail('');
@@ -199,13 +200,13 @@ const FosterApplication = () => {
                     <div className=" form-group">
                         <div className='checkbox-option'>Partagez-vous actuellement un logement avec des personnes de moins de 18 ans ?<span className='required'>*</span></div>
                         <label className='checkbox-label' for="childrenunderfive">Oui, je partage un logement avec une ou plusieurs personnes de moins de 5 ans<input id="childrenyes" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setChildren(target.value)}
-                          type="checkbox" required name="children" value={children} minLength="3" /></label>
+                          type="checkbox"  name="children" value={children} minLength="3" /></label>
                           <label className='checkbox-label' for="childrenbetweenfiveandten">Oui, je partage un logement avec des personnes âgées de 5 à 10 ans<input id="childrenbetweenfiveandten" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setChildren(target.value)}
-                          type="checkbox" required name="children" value={children} minLength="3" /></label>
+                          type="checkbox"  name="children" value={children} minLength="3" /></label>
                           <label className='checkbox-label' for="childrenbetweentenandeighteen">Oui, je partage un logement avec des personnes âgées de 10 à 18 ans<input id="childrenbetweentenandeighteen" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setChildren(target.value)}
-                          type="checkbox" required name="children" value={children} minLength="3" /></label>
+                          type="checkbox"  name="children" value={children} minLength="3" /></label>
                           <label className='checkbox-label' for="childrenno">Non<input id="childrenno" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setChildren(target.value)}
-                          type="checkbox" required name="children" value={children} minLength="3" /></label>
+                          type="checkbox"  name="children" value={children} minLength="3" /></label>
                     </div>
                     <div className=" form-group">
                         <div className='radio-option'>Partagez-vous actuellement un logement avec d’autres adultes ?<span className='required'>*</span></div>
@@ -243,17 +244,17 @@ const FosterApplication = () => {
                     <div className=" form-group">
                         <div className='checkbox-option'>Vous souhaitez accueillir des chats adultes, des chats seniors, des chattes avec des chatons, des chatons qui ne sont plus avec leur mère, ou un ou plusieurs chats nécessitant des soins particuliers (socialisation ou soins médicaux) ?<span className='required'>*</span></div>
                         <label className='checkbox-label' for="typeadult">Chats adultes<input id="typeadult" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setType(target.value)}
-                          type="checkbox" required name="type" value={type} minLength="3" /></label>
+                          type="checkbox"  name="type" value={type} minLength="3" /></label>
                           <label className='checkbox-label' for="typesenior">Chats âgés<input id="typeseniot" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setType(target.value)}
-                          type="checkbox" required name="type" value={type} minLength="3" /></label>
+                          type="checkbox"  name="type" value={type} minLength="3" /></label>
                           <label className='checkbox-label' for="typemotherkitten">Mère chatte avec ses chatons<input id="typemotherkitten" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setType(target.value)}
-                          type="checkbox" required name="type" value={type} minLength="3" /></label>
+                          type="checkbox"  name="type" value={type} minLength="3" /></label>
                           <label className='checkbox-label' for="kitten">Chaton(s) qui n'est(ent) plus avec sa mère<input id="kitten" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setType(target.value)}
-                          type="checkbox" required name="type" value={type} minLength="3" /></label>
+                          type="checkbox"  name="type" value={type} minLength="3" /></label>
                           <label className='checkbox-label' for="catspecialcare">Chat(s) nécessitant des soins particuliers<input id="catspecialcare" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setType(target.value)}
-                          type="checkbox" required name="type" value={type} minLength="3" /></label>
+                          type="checkbox"  name="type" value={type} minLength="3" /></label>
                           <label className='checkbox-label' for="any">L'un des éléments ci-dessus<input id="any" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setType(target.value)}
-                          type="checkbox" required name="type" value={type} minLength="3" /></label>
+                          type="checkbox"  name="type" value={type} minLength="3" /></label>
                     </div>
                     <div className=" form-group">
                         <div className='radio-option'>Souhaitez-vous accueillir des animaux de façon indéfinie, pendant la « saison des chatons » ou seulement jusqu'à ce que vous trouviez un animal à adopter ?<span className='required'>*</span></div>
@@ -360,6 +361,8 @@ const FosterApplication = () => {
                     </div>
                 </div>
             </form>
+            <div className="success" id="success"></div>
+            <div className="error"></div>
           </div>
           <section className='volunteers'>
             <Volunteer />

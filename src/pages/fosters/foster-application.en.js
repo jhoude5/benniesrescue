@@ -53,6 +53,7 @@ const FosterApplication = () => {
         .then(() => {
             document.querySelector('.success').innerText =
                 "Thank you for reaching out to us, we'd get back to you shortly.";
+                document.getElementById('success').scrollIntoView();
             // Clear form fields
             setName('');
             setEmail('');
@@ -199,13 +200,13 @@ const FosterApplication = () => {
                     <div className=" form-group">
                         <div className='checkbox-option'>Do you currently share a home with individuals under the age of 18?<span className='required'>*</span></div>
                         <label className='checkbox-label' for="childrenunderfive">Yes, I share a home with individual(s) under 5 years of age<input id="childrenunderfive" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setChildren(target.value)}
-                          type="checkbox" required name="children" value={children} minLength="3" /></label>
+                          type="checkbox"  name="children" value={children} minLength="3" /></label>
                           <label className='checkbox-label' for="childrenbetweenfiveandten">Yes, I share a home with indivudual(s) between the ages of 5 and 10<input id="childrenbetweenfiveandten" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setChildren(target.value)}
-                          type="checkbox" required name="children" value={children} minLength="3" /></label>
+                          type="checkbox"  name="children" value={children} minLength="3" /></label>
                           <label className='checkbox-label' for="childrenbetweentenandeighteen">Yes, I share a home with individual(s) between the ages of 10 and 18<input id="childrenbetweentenandeighteen" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setChildren(target.value)}
-                          type="checkbox" required name="children" value={children} minLength="3" /></label>
+                          type="checkbox"  name="children" value={children} minLength="3" /></label>
                           <label className='checkbox-label' for="childrenno">No<input id="childrenno" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setChildren(target.value)}
-                          type="checkbox" required name="children" value={children} minLength="3" /></label>
+                          type="checkbox"  name="children" value={children} minLength="3" /></label>
                     </div>
                     <div className=" form-group">
                         <div className='radio-option'>Do you currently share a home with any other adults?<span className='required'>*</span></div>
@@ -243,17 +244,17 @@ const FosterApplication = () => {
                     <div className=" form-group">
                         <div className='checkbox-option'>Do you want to foster adult cats, senior cats, mother cats with kittens, kittens no longer with their mother, or cat(s) requiring special care (socialising or medical care)?<span className='required'>*</span></div>
                         <label className='checkbox-label' for="typeadult">Adult cats<input id="typeadult" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setType(target.value)}
-                          type="checkbox" required name="type" value={type} minLength="3" /></label>
+                          type="checkbox"  name="type" value={type} minLength="3" /></label>
                           <label className='checkbox-label' for="typesenior">Senior cats<input id="typesenior" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setType(target.value)}
-                          type="checkbox" required name="type" value={type} minLength="3" /></label>
+                          type="checkbox"  name="type" value={type} minLength="3" /></label>
                           <label className='checkbox-label' for="typemotherkitten">Mother cat with their kitten(s)<input id="typemotherkitten" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setType(target.value)}
-                          type="checkbox" required name="type" value={type} minLength="3" /></label>
+                          type="checkbox"  name="type" value={type} minLength="3" /></label>
                           <label className='checkbox-label' for="kitten">Kitten(s) no longer with their mother<input id="kitten" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setType(target.value)}
-                          type="checkbox" required name="type" value={type} minLength="3" /></label>
+                          type="checkbox"  name="type" value={type} minLength="3" /></label>
                           <label className='checkbox-label' for="catspecialcare">Cat(s) requiring special care<input id="catspecialcare" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setType(target.value)}
-                          type="checkbox" required name="type" value={type} minLength="3" /></label>
+                          type="checkbox"  name="type" value={type} minLength="3" /></label>
                           <label className='checkbox-label' for="any">Any of the above<input id="any" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setType(target.value)}
-                          type="checkbox" required name="type" value={type} minLength="3" /></label>
+                          type="checkbox"  name="type" value={type} minLength="3" /></label>
                     </div>
                     <div className=" form-group">
                         <div className='radio-option'>Do you want to foster animals indefinitely, during "kitten season" or only until you find an animal to adopt?<span className='required'>*</span></div>
@@ -360,6 +361,8 @@ const FosterApplication = () => {
                     </div>
                 </div>
             </form>
+            <div className="success" id='success'></div>
+            <div className="error"></div>
           </div>
           <section className='volunteers'>
             <Volunteer />

@@ -20,7 +20,8 @@ const Contact = () => {
     })
         .then(() => {
             document.querySelector('.success').innerText =
-                "Thank you for reaching out to us, we'd get back to you shortly.";
+                "Thank you for reaching out to us, we will get back to you shortly.";
+                document.getElementById('success').scrollIntoView();
             // Clear form fields
             setName('');
             setEmail('');
@@ -40,22 +41,22 @@ const Contact = () => {
                 <input type="hidden" name="bot-field" />
                 <div className="row clearfix">
                     <div className=" form-group">
-                        <label for="name">Name <span className='required'>*</span></label>
+                        <label for="name">Name <span className='required'>*</span>
                         <input id="name" onChange={({ target }) => setName(target.value)}
-                          type="text" required name="name" value={name} minLength="3" placeholder="Your Full Name" />
+                          type="text"  name="name" value={name} minLength="3" placeholder="Your Full Name" /></label>
                     </div>
 
                     <div className="form-group">
-                        <label for="email">Email <span className='required'>*</span></label>
+                        <label for="email">Email <span className='required'>*</span>
                         <input id="email" className='col-md-11' type="email"
-                            name="email" value={email} required
-                            onChange={({ target }) => setEmail(target.value)} placeholder="Your Email" />
+                            name="email" value={email} 
+                            onChange={({ target }) => setEmail(target.value)} placeholder="Your Email" /></label>
                     </div>
 
                     <div className="form-group">
-                        <label for="message">Message <span className='required'>*</span></label>
-                        <textarea id="message" name="message" placeholder="Message" required onChange={({ target }) => setMessage(target.value)}
-                            value={message}></textarea>
+                        <label for="message">Message <span className='required'>*</span>
+                        <textarea id="message" name="message" placeholder="Message"  onChange={({ target }) => setMessage(target.value)}
+                            value={message}></textarea></label>
                     </div>
 
                     <div className="form-group form-button">
@@ -63,6 +64,8 @@ const Contact = () => {
                     </div>
                 </div>
             </form>
+            <div className="success" id="success"></div>
+            <div className="error"></div>
         </div>
       </div>
       <section className='adopt-cta'>

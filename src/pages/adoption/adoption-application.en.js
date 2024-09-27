@@ -42,6 +42,7 @@ const AdoptionApplication = () => {
         .then(() => {
             document.querySelector('.success').innerText =
                 "Thank you for reaching out to us, we'd get back to you shortly.";
+                document.getElementById('success').scrollIntoView();
             // Clear form fields
             setName('');
             setEmail('');
@@ -81,19 +82,19 @@ const AdoptionApplication = () => {
                 <div className="row clearfix">
                     
                     <div className="form-group">
-                        <label for="email" className='col-3 col-sm-2 col-md-5'>Email <span className='required'>*</span></label>
-                        <input id="email" className='col-9 col-sm-10 col-md-11' type="email"
+                        <label for="email" >Email <span className='required'>*</span>
+                        <input id="email"  type="email"
                             name="email" value={email} required
-                            onChange={({ target }) => setEmail(target.value)} placeholder="Your Email" />
+                            onChange={({ target }) => setEmail(target.value)} placeholder="Your Email" /></label>
                     </div>
                     <div className=" form-group">
-                        <label for="name" className='col-3 col-sm-2 col-md-5'>Name <span className='required'>*</span></label>
+                        <label for="name">Name <span className='required'>*</span>
                         <input  id="name" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setName(target.value)}
-                          type="text" required name="name" value={name} minLength="3" placeholder="Your Answer" />
+                          type="text" required name="name" value={name} minLength="3" placeholder="Your Answer" /></label>
                     </div>
                     <div className=" form-group">
-                        <label for="phone" className='col-3 col-sm-2 col-md-5'>Contact Phone Number <span className='required'>*</span></label>
-                        <input  id="phone" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setPhone(target.value)}
+                        <label for="phone" >Contact Phone Number <span className='required'>*</span></label>
+                        <input  id="phone" onChange={({ target }) => setPhone(target.value)}
                           type="text" required name="phone" value={phone} minLength="3" placeholder="Your Answer" />
                     </div>
                     <div className=" form-group">
@@ -204,7 +205,7 @@ const AdoptionApplication = () => {
                     </div>
                     <div className=" form-group">
                         <div className='radio-option'>Should your application be approved and an agreement be completed, an adoption fee will be charged. The adoption fee for a kitten is $350, the adoption fee for an adult cat is $200, and the adoption fee for a senior cat or a humanitarian adoption varies (please contact us for details regarding specific cats.) The adoption fee covers the spay or neuter operation, flea treatments, deworming and vaccinations (as well as booster shots when applicable). <span className='required'>*</span></div>
-                        <label class="radio-label-cost" for="cost">I understand<input id="cost" onChange={({ target }) => setCost(target.value)}
+                        <label className="radio-label-cost" for="cost">I understand<input id="cost" onChange={({ target }) => setCost(target.value)}
                           type="radio" required name="cost" value={cost} minLength="3" placeholder="Your Answer" /></label>
                     </div>
                     <div className="form-group">
@@ -219,6 +220,8 @@ const AdoptionApplication = () => {
                     </div>
                 </div>
             </form>
+            <div className="success" id="success"></div>
+            <div className="error"></div>
           </div>
           <section className='volunteers'>
             <Volunteer />

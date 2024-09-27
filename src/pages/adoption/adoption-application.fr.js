@@ -42,6 +42,7 @@ const AdoptionApplication = () => {
         .then(() => {
             document.querySelector('.success').innerText =
                 "Thank you for reaching out to us, we'd get back to you shortly.";
+                document.getElementById('success').scrollIntoView();
             // Clear form fields
             setName('');
             setEmail('');
@@ -67,7 +68,7 @@ const AdoptionApplication = () => {
             setAccessories('');
             setCost('');
         })
-        .catch((error) => document.querySelector('.error').innerText = 'Something went wrong, pls try again.');
+        .catch((error) => document.querySelector('.error').innerText = 'Merci de nous avoir contactés, nous vous répondrons sous peu.');
 };
   return (
     <main>
@@ -221,6 +222,8 @@ const AdoptionApplication = () => {
                     </div>
                 </div>
             </form>
+            <div className="success" id="success"></div>
+            <div className="error"></div>
           </div>
           <section className='volunteers'>
             <Volunteer />

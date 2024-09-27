@@ -14,6 +14,7 @@
                 background-color: #F5F3F3;
                 border-radius: 4px;
                 padding: 7px;
+                width: 100%;
                 &::placeholder {
                     color: #868585;
                     font-family: Inika;
@@ -25,6 +26,7 @@
                 float: left;
                 font-family: Inika;
                 font-size: 22px;
+                width: 100%;
             }
             label.radio-label,
             label.checkbox-label {
@@ -43,8 +45,10 @@
                 font-weight: normal;
                 font-size: 16px;
                 padding-top: 10px;
+                width: unset;
                 input {
                     margin-left: 20px;
+                    width: unset;
                 }
             }
             .checkbox-label {
@@ -87,7 +91,11 @@
             height: 300px;
         }
     }
-
+.success {
+    padding: 40px 0;
+    font-size: 28px;
+    font-weight: bold;
+}
 .adoption-application-form,
 .foster-application-form {
     label {
