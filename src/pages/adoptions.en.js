@@ -17,7 +17,7 @@ const Adoptions = ({data, pageContext}) => {
             <h1>Adoptions</h1>
               {data.allContentfulAdoptions.nodes.map((item, index)  => {
                       return (
-                        <a className="adoptions--wrapper"href={item.urlPath}>
+                        <a className="adoptions--wrapper" href={`/en/adoptions/${item.names}`}>
                           
                             <div className="adoption card col-md-4">
                                 <div className="adoption-teaser">
