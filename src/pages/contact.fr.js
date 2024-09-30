@@ -14,7 +14,7 @@ const Contact = () => {
     e.preventDefault()
     const myForm = e.target;
     const formData = new FormData(myForm);
-    fetch("/", {
+    fetch("/contact.fr.js", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: new URLSearchParams(formData).toString(),
@@ -34,9 +34,9 @@ const Contact = () => {
       <div className="container">
         <div className="row">
             <h1>Contactez-nous</h1>
-            <form className='contact-us-form' name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field"
-              onSubmit={handleSubmit} id="contact-form">
-                <input type="hidden" name="form-name" value="contact" />
+            <form className='contact-us-form' name="contact-fr" method="post" data-netlify="true" data-netlify-honeypot="bot-field"
+              onSubmit={handleSubmit} id="contact-fr">
+                <input type="hidden" name="form-name" value="contact-fr" />
                 <input type="hidden" name="bot-field" />
                 <div className="row clearfix">
                     <div className=" form-group">

@@ -1,4 +1,11 @@
 .adoptions-template {
+    padding-bottom: 40px;
+    @media(min-width: 768px) {
+        padding-bottom: 80px;
+    }
+    @media(min-width: 1024px) {
+        padding-bottom: 100px;
+    }
     img {
         padding: 10px 0;
         // max-height: 251px;

@@ -35,7 +35,7 @@ const AdoptionApplication = () => {
     e.preventDefault()
     const myForm = e.target;
     const formData = new FormData(myForm);
-    fetch("/", {
+    fetch("/adoption-application.en.js", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: new URLSearchParams(formData).toString(),
@@ -75,8 +75,8 @@ const AdoptionApplication = () => {
       <div className="container">
             <h1>Adoption Application</h1>
             <form className='adoption-application-form' name="adoption-application" method="post" data-netlify="true" data-netlify-honeypot="bot-field"
-              onSubmit={handleSubmit} id="adoption-application-form">
-                <input type="hidden" name="form-name" value="contact" />
+              onSubmit={handleSubmit} id="adoption-application">
+                <input type="hidden" name="form-name" value="adoption-application" />
                 <input type="hidden" name="bot-field" />
                 <div className="row clearfix">
                     
@@ -112,25 +112,31 @@ const AdoptionApplication = () => {
                           type="text" required name="cat" value={cat} minLength="3" placeholder="Your Answer" />
                     </div>
                     <div className=" form-group">
-                        <div className='radio-option'>Are you looking for a male or a female cat/kitten? <span className='required'>*</span></div>
+                      <fieldset>
+                        <legend className='radio-option'>Are you looking for a male or a female cat/kitten? <span className='required'>*</span></legend>
                         <label className='radio-label' for="male">Male<input id="male" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setSex(target.value)}
                           type="radio" required name="sex" value={sex} minLength="3" /></label>
                           <label className='radio-label' for="female">Female<input id="female" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setSex(target.value)}
                           type="radio" required name="sex" value={sex} minLength="3" /></label>
+                          </fieldset>
                     </div>
                     <div className=" form-group">
-                        <div className='radio-option'>Does age matter? <span className='required'>*</span></div>
-                        <label className='radio-label' for="ageyes">Yes<input id="ageyes" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setAge(target.value)}
-                          type="radio" required name="age" value={age} minLength="3" /></label>
-                          <label className='radio-label' for="ageno">No<input id="ageno" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setAge(target.value)}
-                          type="radio" required name="age" value={age} minLength="3" /></label>
+                      <fieldset>
+                        <legend className='radio-option'>Does age matter? <span className='required'>*</span></legend>
+                        <p><label className='radio-label' for="ageyes">Yes<input id="ageyes" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setAge(target.value)}
+                          type="radio" required name="age" value={age} minLength="3" /></label></p>
+                          <p><label className='radio-label' for="ageno">No<input id="ageno" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setAge(target.value)}
+                          type="radio" required name="age" value={age} minLength="3" /></label></p>
+                          </fieldset>
                     </div>
                     <div className=" form-group">
-                        <div className='radio-option'>Do you have a veterinarian that you plan on using for the cat? <span className='required'>*</span></div>
+                      <fieldset>
+                        <legend className='radio-option'>Do you have a veterinarian that you plan on using for the cat? <span className='required'>*</span></legend>
                         <label className='radio-label' for="vetyes">Yes<input id="vetyes" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setVet(target.value)}
                           type="radio" required name="vet" value={vet} minLength="3"  /></label>
                           <label className='radio-label' for="vetno">No<input id="vetno" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setVet(target.value)}
                           type="radio" required name="vet" value={vet} minLength="3"  /></label>
+                          </fieldset>
                     </div>
                     <div className=" form-group">
                         <label for="vetname">What is the name of the veterinarian or the veterinarian clinic that you plan on using? <span className='required'>*</span></label>
@@ -143,11 +149,13 @@ const AdoptionApplication = () => {
                           type="text" required name="declaw" value={declaw} minLength="3" placeholder="Your Answer" />
                     </div>
                     <div className=" form-group">
-                        <div className='radio-option'>Are you currently employed? <span className='required'>*</span></div>
+                      <fieldset>
+                        <legend className='radio-option'>Are you currently employed? <span className='required'>*</span></legend>
                         <label className='radio-label' for="employedyes">Yes<input id="employedyes" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setEmployed(target.value)}
                           type="radio" required name="employed" value={employed} minLength="3" /></label>
                           <label className='radio-label' for="employedno">No<input id="employedno" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setEmployed(target.value)}
                           type="radio" required name="employed" value={employed} minLength="3" /></label>
+                          </fieldset>
                     </div>
                     <div className=" form-group">
                         <label for="work">Are you working from home due to covid and will you be returning to your work location? <span className='required'>*</span></label>
@@ -155,32 +163,40 @@ const AdoptionApplication = () => {
                           type="text" required name="work" value={work} minLength="3" placeholder="Your Answer" />
                     </div>
                     <div className=" form-group">
-                        <div className='radio-option'>Do you rent or own your home? <span className='required'>*</span></div>
+                      <fieldset>
+                        <legend className='radio-option'>Do you rent or own your home? <span className='required'>*</span></legend>
                         <label className='radio-label' for="homeyes">Yes<input id="homeyes" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setHome(target.value)}
                           type="radio" required name="home" value={home} minLength="3" /></label>
                           <label className='radio-label' for="homeno">No<input id="homeno" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setHome(target.value)}
                           type="radio" required name="home" value={home} minLength="3" /></label>
+                          </fieldset>
                     </div>
                     <div className=" form-group">
-                        <div className='radio-option'>If rent, are you allowed to keep pets? <span className='required'>*</span></div>
+                      <fieldset>
+                        <legend className='radio-option'>If rent, are you allowed to keep pets? <span className='required'>*</span></legend>
                         <label className='radio-label' for="homepetsyes">Yes<input id="homepetsyes" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setHomePets(target.value)}
                           type="radio" required name="homepets" value={homepets} minLength="3"  /></label>
                           <label className='radio-label' for="homepetsno">No<input id="homepetsno" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setHomePets(target.value)}
                           type="radio" required name="homepets" value={homepets} minLength="3"  /></label>
+                          </fieldset>
                     </div>
                     <div className=" form-group">
-                        <div className='radio-option'>Do you have access to a vehicle and are you willing to travel to Grenville, QC in order to retrieve the cat/kitten? <span className='required'>*</span></div>
+                      <fieldset>
+                        <legend className='radio-option'>Do you have access to a vehicle and are you willing to travel to Grenville, QC in order to retrieve the cat/kitten? <span className='required'>*</span></legend>
                         <label className='radio-label' for="retrieveyes">Yes<input id="retrieveyes" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setRetrieve(target.value)}
                           type="radio" required name="retrieve" value={retrieve} minLength="3"  /></label>
                           <label className='radio-label' for="retrieveno">No<input id="retrieveno" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setRetrieve(target.value)}
                           type="radio" required name="retrieve" value={retrieve} minLength="3"  /></label>
+                          </fieldset>
                     </div>
                     <div className=" form-group">
-                        <div className='radio-option'>Do you have someone to care for the cat/kitten when you travel or are away from home for more than 24 hours? <span className='required'>*</span></div>
+                      <fieldset>
+                        <legend className='radio-option'>Do you have someone to care for the cat/kitten when you travel or are away from home for more than 24 hours? <span className='required'>*</span></legend>
                         <label className='radio-label' for="awayyes">Yes<input id="awayyes" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setAway(target.value)}
                           type="radio" required name="away" value={away} minLength="3"  /></label>
                           <label className='radio-label' for="awayno">No<input id="awayno" className='col-9 col-sm-10 col-md-11' onChange={({ target }) => setAway(target.value)}
                           type="radio" required name="away" value={away} minLength="3"  /></label>
+                          </fieldset>
                     </div>
                     <div className=" form-group">
                         <label for="other">Do you have other pets, kids or roommates? Please provide details. <span className='required'>*</span></label>
@@ -203,9 +219,11 @@ const AdoptionApplication = () => {
                           type="text" required name="accessories" value={accessories} minLength="3" placeholder="Your Answer" />
                     </div>
                     <div className=" form-group">
-                        <div className='radio-option'>Should your application be approved and an agreement be completed, an adoption fee will be charged. The adoption fee for a kitten is $350, the adoption fee for an adult cat is $200, and the adoption fee for a senior cat or a humanitarian adoption varies (please contact us for details regarding specific cats.) The adoption fee covers the spay or neuter operation, flea treatments, deworming and vaccinations (as well as booster shots when applicable). <span className='required'>*</span></div>
+                      <fieldset>
+                        <legend className='radio-option'>Should your application be approved and an agreement be completed, an adoption fee will be charged. The adoption fee for a kitten is $350, the adoption fee for an adult cat is $200, and the adoption fee for a senior cat or a humanitarian adoption varies (please contact us for details regarding specific cats.) The adoption fee covers the spay or neuter operation, flea treatments, deworming and vaccinations (as well as booster shots when applicable). <span className='required'>*</span></legend>
                         <label className="radio-label-cost" for="cost">I understand<input id="cost" onChange={({ target }) => setCost(target.value)}
                           type="radio" required name="cost" value={cost} minLength="3" placeholder="Your Answer" /></label>
+                          </fieldset>
                     </div>
                     <div className="form-group">
                         <label for="message">Do you have any questions about adopting a cat or kitten from Bennie's Rescue? <span className='required'>*</span></label>

@@ -52,9 +52,10 @@ const BecomeFosters = () => {
                 <li>Commitment to Education and Advocacy: Fostering a pet often needs you to advocate for the pet's needs in home, and possible medical care.</li>
               </ul>
             <div className="application-button">
-              <a href="/en/foster-application"className="application-btn btn btn-primary btn-header">Submit Application</a>
+              <a href="/en/fosters/foster-application"className="application-btn btn btn-primary btn-header">Submit Application</a>
             </div>
           </div>
+          
       </div>
       <section className="adopt-cta">
         <Adopt />

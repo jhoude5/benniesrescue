@@ -52,8 +52,11 @@ const BecomeFosters = () => {
                 <li>Flexibilité et patience : les enfants placés en famille d'accueil peuvent avoir vécu des traumatismes et avoir besoin de temps pour s'adapter. La patience et la flexibilité sont essentielles.</li>
         
             </ul>
-        
+            <div className="application-button">
+              <a href="/fr/fosters/foster-application"className="application-btn btn btn-primary btn-header">Soumettre une demande</a>
+            </div>
         </div>
+        
       </div>
       <section className="adopt-cta">
         <Adopt />

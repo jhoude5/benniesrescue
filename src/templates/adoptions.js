@@ -50,6 +50,10 @@ const AdoptionsTemplate = ({data}) => {
                   
                 })}
                 <div className="description">{renderRichText(data.allContentfulAdoptions.edges[0].node.description, options)}</div>
+            
+            <div className="application-button">
+              <a href="/en/adoption/adoption-application"className="application-btn btn btn-primary btn-header">Soumettre une demande</a>
+            </div>
             </div>
         </div>
         <section className='foster'>
