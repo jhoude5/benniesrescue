@@ -74,7 +74,7 @@ const AdoptionApplication = () => {
       <Header page='/en/adoption/adoption-application'/>
       <div className="container">
             <h1>Demande D'Adoption</h1>
-            <form className='adoption-application-form' name="adoption-applicatoin" method="post" data-netlify="true" data-netlify-honeypot="bot-field"
+            <form className='adoption-application-form' name="adoption-application" method="post" data-netlify="true" data-netlify-honeypot="bot-field"
               onSubmit={handleSubmit} id="adoption-application-form">
                 <input type="hidden" name="form-name" value="contact" />
                 <input type="hidden" name="bot-field" />

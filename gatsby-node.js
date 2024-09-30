@@ -17,7 +17,6 @@ exports.createPages = async ({ graphql, actions }) => {
         adoptionsen: allContentfulAdoptions(filter: {node_locale: {eq: "en-US"}}) {
             edges {
                 node {
-                    urlPath
                     names
                 }    
             }
@@ -25,7 +24,6 @@ exports.createPages = async ({ graphql, actions }) => {
         adoptionsfr: allContentfulAdoptions(filter: {node_locale: {eq: "fr"}}) {
             edges {
                 node {
-                    urlPath
                     names
                 }    
             }

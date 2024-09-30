@@ -53,7 +53,6 @@ export const query = graphql`
             description {
               raw
             }
-            urlPath
           }
         }
   }

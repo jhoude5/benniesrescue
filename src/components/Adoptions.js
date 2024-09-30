@@ -8,7 +8,6 @@ const Adoptions = () => {
   query {
     allContentfulAdoptions(limit: 12, filter: {node_locale: {eq: "en-US"}}) {
         nodes {
-          urlPath
           names
           image {
             gatsbyImageData
