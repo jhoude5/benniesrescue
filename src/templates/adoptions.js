@@ -52,7 +52,7 @@ const AdoptionsTemplate = ({data}) => {
                 <div className="description">{renderRichText(data.allContentfulAdoptions.edges[0].node.description, options)}</div>
             
             <div className="application-button">
-              <a href="/en/adoption/adoption-application"className="application-btn btn btn-primary btn-header">Soumettre une demande</a>
+              <a href="https://docs.google.com/forms/d/1n7IgAR-ygUWGYW1AEGWpG7yiautLAuvOkKEYDoGH-EE"className="application-btn btn btn-primary btn-header">Soumettre une demande</a>
             </div>
             </div>
         </div>
