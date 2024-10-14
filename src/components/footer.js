@@ -20,13 +20,13 @@ const Footer = () => {
                         </li>
                         <li><a href='/en/adoptions'>Adoption</a>
                             <ul>
-                                <li><a href='https://docs.google.com/forms/d/1n7IgAR-ygUWGYW1AEGWpG7yiautLAuvOkKEYDoGH-EE/edit'>Application</a></li>
+                                <li><a target='_blank' href='https://docs.google.com/forms/d/1n7IgAR-ygUWGYW1AEGWpG7yiautLAuvOkKEYDoGH-EE/edit'>Application</a></li>
                             </ul>
                         </li>
                         <li><a href='/en/fosters'>Fosters</a>
                             <ul>
                                 <li><a href='/en/fosters/become-a-foster'>How to foster</a></li>
-                                <li><a href='https://docs.google.com/forms/d/1H7Kq5qay87b-lCYedHfGb4qeUDWiF9iFVbFVNH-mOjs'>Application</a></li>
+                                <li><a target='_blank' href='https://docs.google.com/forms/d/1H7Kq5qay87b-lCYedHfGb4qeUDWiF9iFVbFVNH-mOjs'>Application</a></li>
                             </ul>
                         </li>
                         <li><a href='/en/contact'>Contact Us</a></li>

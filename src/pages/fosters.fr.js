@@ -46,7 +46,7 @@ const Fosters = ({data, pageContext }) => {
 }
 export const query = graphql`
     query {
-      allContentfulFosters(filter: {node_locale: {eq: "fr"}}) {
+      allContentfulFosters {
           nodes {
             name
             image {

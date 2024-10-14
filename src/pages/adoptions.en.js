@@ -15,11 +15,12 @@ const Adoptions = ({data, pageContext}) => {
           <Header page='/fr/adoptions'/>
           <div className="container adoptions">
             <h1>Adoptions</h1>
+            <div className="row">
               {data.allContentfulAdoptions.nodes.map((item, index)  => {
                       return (
-                        <a className="adoptions--wrapper" href={`/en/adoptions/${item.names}`}>
+                        <a className="adoptions--wrapper col-md-4" href={`/en/adoptions/${item.names}`}>
                           
-                            <div className="adoption card col-md-4">
+                            <div className="adoption card ">
                                 <div className="adoption-teaser">
                                     <div className="adoption__image">
                                       <GatsbyImage image={getImage(item.image[0].gatsbyImageData)} aria-label={item.names} alt={''} />
@@ -33,6 +34,7 @@ const Adoptions = ({data, pageContext}) => {
                       );
                     })
                   }
+            </div>
           <Pagination pageContext={pageContext} />
           </div>
         </main>

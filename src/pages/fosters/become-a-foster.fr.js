@@ -53,7 +53,7 @@ const BecomeFosters = () => {
         
             </ul>
             <div className="application-button">
-              <a href="https://docs.google.com/forms/d/1qwbvGZIXm5UPopVmCOPcBpbSr6KSkhSBrtlTLSxRk3g"className="application-btn btn btn-primary btn-header">Soumettre une demande</a>
+              <a target='_blank' href="https://docs.google.com/forms/d/1gsIpLXUkF5ssE-n6ahmlvf_x4xXqEdYCJiwtf43Hl_4/"className="application-btn btn btn-primary btn-header">Soumettre une demande</a>
             </div>
         </div>
         

@@ -4,6 +4,7 @@
 module.exports = {
   siteMetadata: {
     title: `Sauvetage Bennies Rescue`,
+    description: 'Trapping and neutering/spaying cats/kittens. Bringing them back to health when needed. Setting up adoptions or fostering for cats/kittens.',
     siteUrl: `https://www.sauvetagebenniesrescue.ca`
   },
   plugins: ["gatsby-plugin-sass", "gatsby-plugin-image", "gatsby-plugin-sharp", "gatsby-transformer-sharp", 
